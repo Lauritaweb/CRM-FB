@@ -1291,3 +1291,7 @@ label,
 .nav-tabs-bordered .nav-link.active{
   color:#f70180 !important;
 }
+table.datatable{
+  width: 80vw;
+  overflow-x: scroll;
+}
