@@ -28,6 +28,14 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    td,
+    th{
+      height: 90px;
+      align-items: flex-start;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -213,51 +221,12 @@
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
             <li>
               <a class="dropdown-item d-flex align-items-center" href="#">
                 <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
+                <span>Cerrar sesión</span>
               </a>
             </li>
-
           </ul><!-- End Profile Dropdown Items -->
         </li><!-- End Profile Nav -->
 
@@ -314,6 +283,13 @@
         </li>
   
         <li class="nav-item">
+          <a class="nav-link" href="./compras.html">
+            <i class="bi bi-credit-card-fill"></i>
+            <span>Gestión de Compras</span>
+          </a>
+        </li>
+        
+        <li class="nav-item">
           <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
             <i class="bi bi-file-earmark-check"></i><span>Gestión de ordenes / presupuestos</span><i class="bi bi-chevron-down ms-auto"></i>
           </a>
@@ -355,101 +331,478 @@
       <div class="row">
         <div class="col-lg-12">
 
-          <div class="card">
-            <div class="card-body">
-            <button class="btn btn-success my-3">+ Agregar producto / stock</button>
-            <table class="table table-borderless datatable">
-              <thead>
-                <tr>
-                  <th scope="col">CU</th>
-                  <th scope="col">Código</th>
-                  <th scope="col">Código FB</th>
-                  <th scope="col">Descripción</th>
-                  <th scope="col">Categoria</th>
-                  <th scope="col">Color</th>
-                  <th scope="col">Talle</th>
-                  <th scope="col">Cantidad</th>
-                  <th scope="col">Cant x bulto</th>
-                  <th scope="col">Bultos</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Dalsanto</th>
-                  <td>J11950F</td>
-                  <td>CUB011</td>
-                  <td>Cubierta Arisun Rapide 700x23</td>
-                  <td><span class="badge bg-primary">Puños</span></td>
-                  <td>Negro</td>
-                  <td>XL</td>
-                  <td>10</td>
-                  <td>50</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Shimano</th>
-                  <td>J20950F</td>
-                  <td>SM011</td>
-                  <td>Wanda King 26 x 2.0</td>
-                  <td><span class="badge bg-primary">Cubierta</span></td>
-                  <td>Blanco</td>
-                  <td>L</td>
-                  <td>30</td>
-                  <td>30</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Dalsanto</th>
-                  <td>J11950F</td>
-                  <td>CUB011</td>
-                  <td>CARTRIDGE 34.7mm DER-IZQ 110mm</td>
-                  <td><span class="badge bg-primary">Disco</span></td>
-                  <td>Plateado</td>
-                  <td>M</td>
-                  <td>120</td>
-                  <td>50</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Topmega</th>
-                  <td>J11950F</td>
-                  <td>CUB011</td>
-                  <td>Maza trasera con cierre rápido para V-Brake</td>
-                  <td><span class="badge bg-primary">Maza</span></td>
-                  <td>Bronce</td>
-                  <td>XX</td>
-                  <td>120</td>
-                  <td>50</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Shimano</th>
-                  <td>J11950F</td>
-                  <td>CUB011</td>
-                  <td>Disco protector de rayos 140mm - plastico</td>
-                  <td><span class="badge bg-primary">Asiento</span></td>
-                  <td>Blanco</td>
-                  <td>SM</td>
-                  <td>120</td>
-                  <td>50</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Shimano</th>
-                  <td>J20950F</td>
-                  <td>SM011</td>
-                  <td>Wanda King 26 x 2.0</td>
-                  <td><span class="badge bg-primary">Cubierta</span></td>
-                  <td>Blanco</td>
-                  <td>L</td>
-                  <td>30</td>
-                  <td>30</td>
-                  <td>4</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-          </div>
+          <!-- tabs -->
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered">
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#stock">Depósito</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cuadros">Cuadros</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#taller">Taller</button>
+            </li>
+          </ul>
+
+          <div class="tab-content pt-2">
+
+            <div class="tab-pane fade show active profile-overview" id="stock">
+                <button class="btn btn-success my-3">+ Agregar stock</button>
+                <button class="btn btn-info my-3">+ Agregar categoria</button>
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>CU</th>
+                      <th>Código</th>
+                      <th>Código FB</th>
+                      <th>Descripción</th>
+                      <th>Categoria</th>
+                      <th>Color</th>
+                      <th>Talle</th>
+                      <th>Cantidad</th>
+                      <th>Cant x bulto</th>
+                      <th>Bultos</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Dalsanto</th>
+                      <td>J11950F</td>
+                      <td>CUB011</td>
+                      <td>Cubierta Arisun Rapide 700x23</td>
+                      <td><span class="badge bg-primary">Puños</span></td>
+                      <td>Negro</td>
+                      <td>XL</td>
+                      <td>10</td>
+                      <td>50</td>
+                      <td>4</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Shimano</th>
+                      <td>J20950F</td>
+                      <td>SM011</td>
+                      <td>Wanda King 26 x 2.0</td>
+                      <td><span class="badge bg-primary">Cubierta</span></td>
+                      <td>Blanco</td>
+                      <td>L</td>
+                      <td>30</td>
+                      <td>30</td>
+                      <td>4</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Dalsanto</th>
+                      <td>J11950F</td>
+                      <td>CUB011</td>
+                      <td>CARTRIDGE 34.7mm DER-IZQ 110mm</td>
+                      <td><span class="badge bg-primary">Disco</span></td>
+                      <td>Plateado</td>
+                      <td>M</td>
+                      <td>120</td>
+                      <td>50</td>
+                      <td>4</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Topmega</th>
+                      <td>J11950F</td>
+                      <td>CUB011</td>
+                      <td>Maza trasera con cierre rápido para V-Brake</td>
+                      <td><span class="badge bg-primary">Maza</span></td>
+                      <td>Bronce</td>
+                      <td>XX</td>
+                      <td>120</td>
+                      <td>50</td>
+                      <td>4</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Shimano</th>
+                      <td>J11950F</td>
+                      <td>CUB011</td>
+                      <td>Disco protector de rayos 140mm - plastico</td>
+                      <td><span class="badge bg-primary">Asiento</span></td>
+                      <td>Blanco</td>
+                      <td>SM</td>
+                      <td>120</td>
+                      <td>50</td>
+                      <td>4</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Shimano</th>
+                      <td>J20950F</td>
+                      <td>SM011</td>
+                      <td>Wanda King 26 x 2.0</td>
+                      <td><span class="badge bg-primary">Cubierta</span></td>
+                      <td>Blanco</td>
+                      <td>L</td>
+                      <td>30</td>
+                      <td>30</td>
+                      <td>4</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div><!-- end tab -->
+
+            <div class="tab-pane fade profile-edit pt-3" id="cuadros">
+              <button class="btn btn-success my-3">+ Agregar cuadros</button>
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>Proveedor</th>
+                      <th>Código</th>
+                      <th>Descripción</th>
+                      <th>Color</th>
+                      <th>Talle</th>
+                      <th>Cantidad</th>
+                      <th>Ubicación</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>.</th>
+                      <td>.</td>
+                      <td>Aero</td>
+                      <td>Negro Mate</td>
+                      <td>52</td>
+                      <td>12</td>
+                      <td>salón</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>.</th>
+                      <td>.</td>
+                      <td>Classic dama</td>
+                      <td>Crudo</td>
+                      <td>54</td>
+                      <td>12</td>
+                      <td>salón</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>.</th>
+                      <td>.</td>
+                      <td>Aero</td>
+                      <td>Verde militar</td>
+                      <td>53</td>
+                      <td>20</td>
+                      <td>salón</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>.</th>
+                      <td>.</td>
+                      <td>Ciclo Dama Ancho</td>
+                      <td>Violeta Obispo Mate</td>
+                      <td>51</td>
+                      <td>5</td>
+                      <td>salón</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>.</th>
+                      <td>.</td>
+                      <td>Ciclo Ancho</td>
+                      <td>Fucsia Mate</td>
+                      <td>51</td>
+                      <td>3</td>
+                      <td>salón</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>.</th>
+                      <td>.</td>
+                      <td>Aero Cambios</td>
+                      <td>Negro Mate</td>
+                      <td>51</td>
+                      <td>12</td>
+                      <td>salón</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div><!-- end tab -->
+
+            <div class="tab-pane fade pt-3" id="taller">
+              <button class="btn btn-success my-3">+ Agregar taller</button>
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>Proveedor</th>
+                      <th>Código</th>
+                      <th>Código FB</th>
+                      <th>Descripción</th>
+                      <th>Categoria</th>
+                      <th>Color</th>
+                      <th>Talle</th>
+                      <th>Cantidad</th>
+                      <th>Fila caja</th>
+                      <th>Bultos</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Dalsanto</th>
+                      <td>11677</td>
+                      <td>.</td>
+                      <td>Asiento DDK Snake</td>
+                      <td>Stem</td>
+                      <td>Negro</td>
+                      <td>x</td>
+                      <td>10</td>
+                      <td>.</td>
+                      <td>MEDIO</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Ferrari</th>
+                      <td>11677</td>
+                      <td>.</td>
+                      <td>Pastillas de freno Aligator</td>
+                      <td>Puños</td>
+                      <td>Negro/Blanco</td>
+                      <td>x</td>
+                      <td>7</td>
+                      <td>.</td>
+                      <td>.</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Pereyra</th>
+                      <td>11677</td>
+                      <td>.</td>
+                      <td>Pata de cambio Ty 300</td>
+                      <td>Pata de cambio</td>
+                      <td>Rojo</td>
+                      <td>x</td>
+                      <td>20</td>
+                      <td>.</td>
+                      <td>MEDIO / MULTI</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Shimano</th>
+                      <td>11677</td>
+                      <td>.</td>
+                      <td>Stem Kawasaki 31.8 90mm</td>
+                      <td>Stem</td>
+                      <td>Verde</td>
+                      <td>x</td>
+                      <td>18</td>
+                      <td>.</td>
+                      <td>MEDIO</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Dalsanto</th>
+                      <td>11677</td>
+                      <td>.</td>
+                      <td>Manubrio Lovit 25.4</td>
+                      <td>Manubrio</td>
+                      <td>Negro</td>
+                      <td>x</td>
+                      <td>38</td>
+                      <td>.</td>
+                      <td>.</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Dalsanto</th>
+                      <td>11677</td>
+                      <td>.</td>
+                      <td>Stem top road 25.4 60mm</td>
+                      <td>Stem</td>
+                      <td>Negro</td>
+                      <td>x</td>
+                      <td>38</td>
+                      <td>.</td>
+                      <td>MEDIO</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+             
+
+            </div> <!-- end tab -->
+
+          </div><!-- End Bordered Tabs -->
+
+        </div>
+
+          <!-- end tabs -->
 
         </div>
       </div>

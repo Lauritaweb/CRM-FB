@@ -1244,7 +1244,8 @@ h6 {
 .sidebar-nav .nav-link,
 .sidebar-nav .nav-link.collapsed,
 .footer,
-.table {
+.table,
+body {
   background-color: black;
   --bs-table-bg:black;
 }
@@ -1294,4 +1295,11 @@ label,
 table.datatable{
   width: 80vw;
   overflow-x: scroll;
+}
+table td{
+ font-size: .9em;
+}
+
+body{
+  overflow-x: hidden;
 }

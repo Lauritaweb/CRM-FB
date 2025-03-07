@@ -28,6 +28,14 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    td,
+    th{
+      height: 100px;
+      align-items: flex-start;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -312,6 +320,13 @@
             <span>Gestión de Precios</span>
           </a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./compras.html">
+            <i class="bi bi-credit-card-fill"></i>
+            <span>Gestión de Compras</span>
+          </a>
+        </li>
   
         <li class="nav-item">
           <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
@@ -355,182 +370,504 @@
       <div class="row">
         <div class="col-lg-12">
 
-          <div class="card">
-            <div class="card-body">
-            <button class="btn btn-success my-3">+ Agregar venta</button>
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th>
-                      <b>N° de orden</b>
-                    </th>
-                    <th>Cliente</th>
-                    <th>Estado</th>
-                    <th>% de Pago</th>
-                    <th>Total</th>
-                    <th>Acción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#01</td>
-                    <td>Nicolás Juares</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>50%</td>
-                    <td>$875.000</td>
-                    <td>
-                      <!-- ver -->
-                      <a class="btn btn-primary p-1" href="./detalle-bici.html">
-                        <i class="bi bi-eye"></i>
-                      </a>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#02</td>
-                    <td>Jose Cuervo</td>
-                    <td class="text-uppercase">Pendiente</td>
-                    <td>30%</td>
-                    <td>$408.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#03</td>
-                    <td>Laura Osbourne</td>
-                    <td class="text-uppercase">Pendiente</td>
-                    <td>20%</td>
-                    <td>$888.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#04</td>
-                    <td>Dante Avalle</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>70%</td>
-                    <td>$863.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#05</td>
-                    <td>Monica Perez</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>90%</td>
-                    <td>$652.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#06</td>
-                    <td>Julian Suarez</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>10%</td>
-                    <td>$740.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#07</td>
-                    <td>Mariana Ariza</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>20%</td>
-                    <td>$490.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                
-                  
-                </tbody>
-              </table>
-              <!-- End Table with stripped rows -->
+          <!-- tabs -->
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered">
 
-            </div>
-          </div>
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ventas-gral">Ventas general</button>
+            </li>
 
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#facturacion-mensual">Facturación mensual</button>
+            </li>
+
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ventas-web">Ventas web</button>
+            </li>
+
+          </ul>
+          <div class="tab-content pt-2">
+
+            <div class="tab-pane fade show active profile-overview" id="ventas-gral">
+              <!-- Sales Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card sales-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Ventas totales 
+                      <span>| 2011 - 2025</span></h5>
+  
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <h6 class="text-white fs-4">Ventas: 1.445</h6>
+                        <span class="text-white small pt-1 fw-bold fs-3">$900.1056</span> 
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div><!-- End Sales Card -->
+                <button class="btn btn-success my-3">+ Agregar venta</button>
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>Mes</th>
+                      <th>Fecha</th>
+                      <th>Producto</th>
+                      <th>x unidad</th>
+                      <th>Código</th>
+                      <th>Forma de pago</th>
+                      <th>Monto</th>
+                      <th>Cliente</th>
+                      <th>DNI</th>
+                      <th>Factura N°</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>FEB 25</th>
+                      <td>18-02-2025</td>
+                      <td>Storm</td>
+                      <td>1</td>
+                      <td>CAM-35-001</td>
+                      <td>Debito posnet</td>
+                      <td>15000</td>
+                      <td>Diego Perez</td>
+                      <td>25385521</td>
+                      <td>0004-00000253</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>FEB 25</th>
+                      <td>12-02-2025</td>
+                      <td>herradura trasera</td>
+                      <td>2</td>
+                      <td>Aero-Mafla</td>
+                      <td>Debito posnet</td>
+                      <td>15000</td>
+                      <td>Alejandra Perez</td>
+                      <td>25385521</td>
+                      <td>0004-00000253</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>FEB 25</th>
+                      <td>08-02-2025</td>
+                      <td>Service</td>
+                      <td>1</td>
+                      <td>ServiceFULL Forever</td>
+                      <td>Efectivo</td>
+                      <td>15000</td>
+                      <td>Luis Marcelo Talavera</td>
+                      <td>25385521</td>
+                      <td>0004-00000253</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>FEB 25</th>
+                      <td>06-02-2025</td>
+                      <td>Bolso Matero</td>
+                      <td>2</td>
+                      <td>CAM-35-001</td>
+                      <td>Efectivo</td>
+                      <td>15000</td>
+                      <td>Andres Ingenieria</td>
+                      <td>25385521</td>
+                      <td>0004-00000253</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>FEB 25</th>
+                      <td>21-02-2025</td>
+                      <td>Cámara</td>
+                      <td>1</td>
+                      <td>CAM-35-001</td>
+                      <td>Web</td>
+                      <td>15000</td>
+                      <td>Seibo Ingenieria</td>
+                      <td>25385521</td>
+                      <td>0004-00000253</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>FEB 25</th>
+                      <td>06-02-2025</td>
+                      <td>Storm</td>
+                      <td>3</td>
+                      <td>CAM-35-001</td>
+                      <td>Transferencia MP</td>
+                      <td>15000</td>
+                      <td>Julia Cervo</td>
+                      <td>25385521</td>
+                      <td>0004-00000253</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div><!-- end tab -->
+
+            <div class="tab-pane fade profile-edit pt-3" id="facturacion-mensual">
+              <div class="row">
+
+                <!-- Sales Card -->
+                <div class="col-xxl-4 col-md-6">
+                  <div class="card info-card sales-card">
+                    <div class="card-body">
+                      <h5 class="card-title">Ventas totales 
+                        <span>| FEBRERO 2025</span></h5>
+    
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <h6 class="text-white fs-4">Ventas: 145</h6>
+                          <span class="text-white small pt-1 fw-bold fs-3">$179.1056</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Sales Card -->
+
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>Cliente</th>
+                      <th>Factura N°</th>
+                      <th>Producto</th>
+                      <th>Monto</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Luis Marcelo Talavera</th>
+                      <td>0004-00000253</td>
+                      <td>Aero Mafla</td>
+                      <td>$750.000</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Julia Cesar</th>
+                      <td>0004-00000214</td>
+                      <td>Storm</td>
+                      <td>$250.000</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Pedro Tomson</th>
+                      <td>0004-00000220</td>
+                      <td>kit de parchado</td>
+                      <td>$60.000</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Natalia Osso</th>
+                      <td>0004-00000252</td>
+                      <td>Kit Tubeless Quaxar</td>
+                      <td>$75.1300</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Petro Tupper</th>
+                      <td>0004-00000253</td>
+                      <td>Aero Mafla</td>
+                      <td>$20.300</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Maria Laura Lorenzeti</th>
+                      <td>0004-00000253</td>
+                      <td>Aero Mafla</td>
+                      <td>$681300</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div><!-- end tab -->
+
+          </div><!-- End Bordered Tabs -->
+
+          <div class="tab-pane fade pt-3" id="ventas-web">
+              
+                <div class="row">
+                <!-- Sales Card -->
+                  <div class="col-xxl-4 col-md-6">
+                    <div class="card info-card sales-card">
+                      <div class="card-body">
+                        <h5 class="card-title">Ventas totales 
+                          <span>| WEB</span></h5>
+      
+                        <div class="d-flex align-items-center">
+                          <div>
+                            <h6 class="text-white fs-4">Ventas: 145</h6>
+                            <span class="text-white small pt-1 fw-bold fs-3">$179.1056</span> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div><!-- End Sales Card -->
+
+                <table class="table datatable">
+                  <thead>
+                    <tr>
+                      <th>N°</th>
+                      <th>Cliente</th>
+                      <th>DNI</th>
+                      <th>Producto</th>
+                      <th>Monto</th>
+                      <th>Envío</th>
+                      <th>Teléfono</th>
+                      <th>Seguimiento</th>
+                      <th>Estado</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>270</th>
+                      <td>Yamila Pichinini</td>
+                      <td>36721176</td>
+                      <td>PREVENTA Bolso Matero</td>
+                      <td>59156</td>
+                      <td>AV DR MANUEL BELGRANO - 390 - AVELLANEDA</td>
+                      <td>1162035918</td>
+                      <td>19936539CEC822C001</td>
+                      <td>Despachado</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>272</th>
+                      <td>Antonella Fresco</td>
+                      <td>36721176</td>
+                      <td>PREVENTA Bolso Matero</td>
+                      <td>59156</td>
+                      <td>AV DR MANUEL BELGRANO - 390 - AVELLANEDA</td>
+                      <td>1162035918</td>
+                      <td>19936539CEC822C001</td>
+                      <td>Despachado</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>274</th>
+                      <td>Ana Novelli</td>
+                      <td>36721176</td>
+                      <td>Bolso Matero</td>
+                      <td>59156</td>
+                      <td>AV DR MANUEL BELGRANO - 390 - AVELLANEDA</td>
+                      <td>1162035918</td>
+                      <td>19936539CEC822C001</td>
+                      <td>Despachado</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>271</th>
+                      <td>Alejandra Callens</td>
+                      <td>36721176</td>
+                      <td>Medidor de desgaste de cadena</td>
+                      <td>59156</td>
+                      <td>Retiro en tienda</td>
+                      <td>1162035918</td>
+                      <td>19936539CEC822C001</td>
+                      <td>Despachado</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>276</th>
+                      <td>Gabriela Fontela</td>
+                      <td>36721176</td>
+                      <td>Service Full</td>
+                      <td>59156</td>
+                      <td>Retiro en tienda</td>
+                      <td>1162035918</td>
+                      <td>19936539CEC822C001</td>
+                      <td>Despachado</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>277</th>
+                      <td>Gabriela Fontela</td>
+                      <td>36721176</td>
+                      <td>Aero x Masflashero</td>
+                      <td>59156</td>
+                      <td>ROSARIO - MARCEL LIBROS</td>
+                      <td>1162035918</td>
+                      <td>19936539CEC822C001</td>
+                      <td>Despachado</td>
+                      <td class="d-flex gap-1">
+                        <!-- editar -->
+                        <button class="btn btn-warning p-1">
+                          <i class="bi bi-pencil"></i>
+                        </button>
+                        <!-- eliminar -->
+                        <button class="btn btn-danger p-1">
+                          <i class="bi bi-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+           </div> <!-- end tab -->
         </div>
-      </div>
+
+          <!-- end tabs -->
+
+        </div><!-- end col 12 -->
+      </div><!-- end row -->
     </section>
 
   </main><!-- End #main -->
