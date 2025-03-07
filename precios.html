@@ -212,53 +212,7 @@
             <span class="d-none d-md-block dropdown-toggle ps-2">Admin Forever</span>
           </a><!-- End Profile Iamge Icon -->
 
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items -->
+          
         </li><!-- End Profile Nav -->
 
       </ul>
@@ -273,9 +227,9 @@
   
         <li class="nav-item">
           <a class="nav-link " href="index.html">
-           
+            <i class="bi bi-grid"></i>
             <span>Dashboard</span>
-          </a> <i class="bi bi-grid"></i>
+          </a> 
         </li>
         
         <li class="nav-item">
@@ -293,7 +247,7 @@
         </li>
   
         <li class="nav-item">
-          <a class="nav-link" href="./bicicletas.html">
+          <a class="nav-link" href="./ventas.html">
             <i class="bi bi-cart-fill"></i>
             <span>Gestión de Ventas</span>
           </a>
@@ -362,18 +316,27 @@
       <div class="row">
         <div class="col-lg-12">
 
-          <div class="card">
+          <div class="card pt-3" style="width: auto; overflow-x: scroll;">
             <div class="card-body">
             <table class="table table-borderless datatable">
               <thead>
                 <tr>
-                  <th scope="col">VC</th>
+                  <th scope="col">Proveedor</th>
                   <th scope="col">Nombre original</th>
                   <th scope="col">Código</th>
                   <th scope="col">Código FB</th>
                   <th scope="col">Nombre FB</th>
-                  <th scope="col">Categoria</th>
+                  <th scope="col">Categoría</th>
                   <th scope="col">Stock</th>
+                  <th scope="col">Marca</th>
+                  <th scope="col">Atributo I</th>
+                  <th scope="col">Atributo II</th>
+                  <th scope="col">Color</th>
+                  <th scope="col">Web</th>
+                  <th scope="col">USD</th>
+                  <th scope="col">Costo</th>
+                  <th scope="col">IVA</th>
+                  <th scope="col">Efectivo</th>
                   <th scope="col">Transf/deb</th>
                   <th scope="col">Web</th>
                   <th scope="col">3 cuotas</th>
@@ -382,82 +345,136 @@
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Dalsanto</th>
-                  <td>Cadena tipo himano nexus - 100 eslabones</td>
-                  <td>A000001</td>
-                  <td>CAD003</td>
-                  <td>Cadena reforzada | pista | tipo nexus</td>
-                  <td>Cadena</td>
-                  <td>.</td>
-                  <td>18.500</td>
-                  <td>19.000</td>
-                  <td>20.200</td>
-                  <td>22.000</td>
+                  <th scope="row">Barrani</th>
+                  <td scope="row">Cadena tipo himano nexus - 100 eslabones</td>
+                  <td scope="row">A000001</td>
+                  <td scope="row">CAD003</td>
+                  <td scope="row">Cadena reforzada | pista | tipo nexus</td>
+                  <td scope="row">Cadena</td>
+                  <td scope="row">.</td>
+                  <td scope="row">.</td>
+                  <td scope="row">100</td>
+                  <td scope="row">1V</td>
+                  <td scope="row">.</td>
+                  <td scope="row">X</td>
+                  <td scope="row">.</td>
+                  <td scope="row">9000</td>
+                  <td scope="row">11250</td>
+                  <td scope="row">18145</td>
+                  <td scope="row">18690</td>
+                  <td scope="row">19052</td>
+                  <td scope="row">21119</td>
+                  <td scope="row">23175</td>
                 </tr>
                 <tr>
                   <th scope="row">Barrani</th>
-                  <td>Bolso Forever</td>
-                  <td>STM-254-004</td>
-                  <td>CAD003</td>
-                  <td>Cadena reforzada | pista | tipo nexus</td>
-                  <td>Cadena</td>
-                  <td>.</td>
-                  <td>18.500</td>
-                  <td>19.000</td>
-                  <td>20.200</td>
-                  <td>22.000</td>
-                </tr>
-                <tr>
-                  <th scope="row">Ferrari</th>
-                  <td>Horquilla de carbono </td>
-                  <td>A000001</td>
-                  <td>RUEDA-DISCO-D</td>
-                  <td>Cadena reforzada | pista | tipo nexus</td>
-                  <td>Cadena</td>
-                  <td>.</td>
-                  <td>18.500</td>
-                  <td>19.000</td>
-                  <td>20.200</td>
-                  <td>22.000</td>
-                </tr>
-                <tr>
-                  <th scope="row">Forever Bikes</th>
-                  <td>City tyre 700x45</td>
-                  <td>BOL003</td>
-                  <td>PINT-GUARDA</td>
-                  <td>Cadena reforzada | pista | tipo nexus</td>
-                  <td>Inflador</td>
-                  <td>.</td>
-                  <td>18.500</td>
-                  <td>19.000</td>
-                  <td>20.200</td>
-                  <td>22.000</td>
-                </tr>
-                <tr>
-                  <th scope="row">Hourus</th>
-                  <td>PINS 17,5mm</td>
-                  <td>FRE-SOPORTE</td>
-                  <td>ASI-VAN-002</td>
-                  <td>Cadena reforzada | pista | tipo nexus</td>
-                  <td>Luces</td>
-                  <td>.</td>
-                  <td>18.500</td>
-                  <td>19.000</td>
-                  <td>20.200</td>
-                  <td>22.000</td>
+                  <td scope="row">Cadena tipo himano nexus - 100 eslabones</td>
+                  <td scope="row">A000001</td>
+                  <td scope="row">CAD003</td>
+                  <td scope="row">Cadena reforzada | pista | tipo nexus</td>
+                  <td scope="row">Cadena</td>
+                  <td scope="row">.</td>
+                  <td scope="row">.</td>
+                  <td scope="row">100</td>
+                  <td scope="row">1V</td>
+                  <td scope="row">.</td>
+                  <td scope="row">X</td>
+                  <td scope="row">.</td>
+                  <td scope="row">9000</td>
+                  <td scope="row">11250</td>
+                  <td scope="row">18145</td>
+                  <td scope="row">18690</td>
+                  <td scope="row">19052</td>
+                  <td scope="row">21119</td>
+                  <td scope="row">23175</td>
                 </tr>
                 <tr>
                   <th scope="row">Barrani</th>
-                  <td>VAN CHIP REAR</td>
-                  <td>A000001</td>
-                  <td>CAD003</td>
-                  <td>Cadena reforzada | pista | tipo nexus</td>
-                  <td>Asiento</td>
-                  <td>.</td>
-                  <td>18.500</td>
-                  <td>19.000</td>
-                  <td>20.200</td>
-                  <td>22.000</td>
+                  <td scope="row">Cadena tipo himano nexus - 100 eslabones</td>
+                  <td scope="row">A000001</td>
+                  <td scope="row">CAD003</td>
+                  <td scope="row">Cadena reforzada | pista | tipo nexus</td>
+                  <td scope="row">Cadena</td>
+                  <td scope="row">.</td>
+                  <td scope="row">.</td>
+                  <td scope="row">100</td>
+                  <td scope="row">1V</td>
+                  <td scope="row">.</td>
+                  <td scope="row">X</td>
+                  <td scope="row">.</td>
+                  <td scope="row">9000</td>
+                  <td scope="row">11250</td>
+                  <td scope="row">18145</td>
+                  <td scope="row">18690</td>
+                  <td scope="row">19052</td>
+                  <td scope="row">21119</td>
+                  <td scope="row">23175</td>
+                </tr>
+                <tr>
+                  <th scope="row">Barrani</th>
+                  <td scope="row">Cadena tipo himano nexus - 100 eslabones</td>
+                  <td scope="row">A000001</td>
+                  <td scope="row">CAD003</td>
+                  <td scope="row">Cadena reforzada | pista | tipo nexus</td>
+                  <td scope="row">Cadena</td>
+                  <td scope="row">.</td>
+                  <td scope="row">.</td>
+                  <td scope="row">100</td>
+                  <td scope="row">1V</td>
+                  <td scope="row">.</td>
+                  <td scope="row">X</td>
+                  <td scope="row">.</td>
+                  <td scope="row">9000</td>
+                  <td scope="row">11250</td>
+                  <td scope="row">18145</td>
+                  <td scope="row">18690</td>
+                  <td scope="row">19052</td>
+                  <td scope="row">21119</td>
+                  <td scope="row">23175</td>
+                </tr>
+                <tr>
+                  <th scope="row">Barrani</th>
+                  <td scope="row">Cadena tipo himano nexus - 100 eslabones</td>
+                  <td scope="row">A000001</td>
+                  <td scope="row">CAD003</td>
+                  <td scope="row">Cadena reforzada | pista | tipo nexus</td>
+                  <td scope="row">Cadena</td>
+                  <td scope="row">.</td>
+                  <td scope="row">.</td>
+                  <td scope="row">100</td>
+                  <td scope="row">1V</td>
+                  <td scope="row">.</td>
+                  <td scope="row">X</td>
+                  <td scope="row">.</td>
+                  <td scope="row">9000</td>
+                  <td scope="row">11250</td>
+                  <td scope="row">18145</td>
+                  <td scope="row">18690</td>
+                  <td scope="row">19052</td>
+                  <td scope="row">21119</td>
+                  <td scope="row">23175</td>
+                </tr>
+                <tr>
+                  <th scope="row">Barrani</th>
+                  <td scope="row">Cadena tipo himano nexus - 100 eslabones</td>
+                  <td scope="row">A000001</td>
+                  <td scope="row">CAD003</td>
+                  <td scope="row">Cadena reforzada | pista | tipo nexus</td>
+                  <td scope="row">Cadena</td>
+                  <td scope="row">.</td>
+                  <td scope="row">.</td>
+                  <td scope="row">100</td>
+                  <td scope="row">1V</td>
+                  <td scope="row">.</td>
+                  <td scope="row">X</td>
+                  <td scope="row">.</td>
+                  <td scope="row">9000</td>
+                  <td scope="row">11250</td>
+                  <td scope="row">18145</td>
+                  <td scope="row">18690</td>
+                  <td scope="row">19052</td>
+                  <td scope="row">21119</td>
+                  <td scope="row">23175</td>
                 </tr>
               </tbody>
             </table>

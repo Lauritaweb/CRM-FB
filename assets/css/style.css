@@ -1303,3 +1303,12 @@ table td{
 body{
   overflow-x: hidden;
 }
+
+table.table-borderless.datatable tr:nth-child(even){
+    background-color: #f2f2f2!important;
+  }
+  
+  table.table-borderless.datatable {  /* Resalta fila al pasar el mouse */
+    background-color: #ddd!important;
+  }
+
