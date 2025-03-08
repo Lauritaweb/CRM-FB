@@ -313,8 +313,9 @@
       </h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Detalle pedido de bicicleta</li>
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="./ventas.html">Ventas</a></li>
+          <li class="breadcrumb-item">Detalle venta</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -342,15 +343,12 @@
             <div class="card-body pt-3">
               <!-- Bordered Tabs -->
               <ul class="nav nav-tabs nav-tabs-bordered">
-
                 <li class="nav-item">
                   <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Datos</button>
                 </li>
-
                 <li class="nav-item">
                   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar datos</button>
                 </li>
-
               </ul>
               <div class="tab-content pt-2">
 
@@ -980,6 +978,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const tab = params.get("tab");
+  
+      if (tab === "edit") {
+        // Desactiva la pestaña activa actual
+        document.querySelector('.nav-link.active')?.classList.remove('active');
+        document.querySelector('.tab-pane.active')?.classList.remove('show', 'active');
+  
+        // Activa la pestaña "Editar datos"
+        document.querySelector('[data-bs-target="#profile-edit"]').classList.add('active');
+        document.querySelector('#profile-edit').classList.add('show', 'active');
+      }
+    });
+  </script>
+  
 
 </body>
 
