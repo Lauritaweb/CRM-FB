@@ -242,7 +242,7 @@
       <li class="nav-item">
         <a class="nav-link" href="./clientes.html">
           <i class="bi bi-person-lines-fill"></i>
-          <span>Alta de stock</span>
+          <span>Gestión de Clientes</span>
         </a>
       </li>
 
@@ -324,8 +324,6 @@
 
           <div class="card text-white">
             <div class="card-body pt-3">
-             
-              
 
                 <div class="pt-3" id="">
 
@@ -335,8 +333,46 @@
                     <div class="row mb-3">
                       <label for="norden" class="col-md-4 col-lg-3 col-form-label">Proveedor</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="norden" type="text" class="form-control" id="" value="">
+                        <select id="proveedorSelect" class="form-select" onchange="checkCustomProveedor()">
+                          <option value="">Selecciona un proveedor</option>
+                          <option value="Barrani">Barrani</option>
+                          <option value="Dalsanto">Dalsanto</option>
+                          <option value="Ferrari">Ferrari</option>
+                          <option value="Houston">Houston</option>
+                          <option value="Lugano">Lugano</option>
+                          <option value="Mitas">Mitas</option>
+                          <option value="Pereyra">Pereyra</option>
+                          <option value="Shimano">Shimano</option>
+                          <option value="Topmega">Topmega</option>
+                          <option value="Zamponi">Zamponi</option>
+                          <option value="C080141449">C080141449</option>
+                          <option value="J010152538">J010152538</option>
+                          <option value="P040402815">P040402815</option>
+                          <option value="R020103122">R020103122</option>
+                          <option value="R030353136">R030353136</option>
+                          <option value="Otro">Otro (Ingresar manualmente)</option>
+                        </select>    
+                      
+                        <input type="text" id="customProveedor" class="form-control mt-2" placeholder="Escribe un proveedor" style="display: none;">                    
                       </div>
+                      
+                      <script>
+                        function checkCustomProveedor() {
+                          var select = document.getElementById("proveedorSelect");
+                          var customInput = document.getElementById("customProveedor");
+                      
+                          console.log("Categoria seleccionado:", select.value); // Para verificar en consola si funciona
+                      
+                          if (select.value === "Otro") {
+                            customInput.style.display = "block";
+                            customInput.focus();
+                          } else {
+                            customInput.style.display = "none";
+                            customInput.value = "";
+                          }
+                        }
+                      </script>
+                      
                     </div>
 
                     <div class="row mb-3">
@@ -354,14 +390,14 @@
                     </div>
                   
                     <div class="row mb-3">
-                      <label for="pago" class="col-md-4 col-lg-3 col-form-label">Nombre interno</label>
+                      <label for="pago" class="col-md-4 col-lg-3 col-form-label">Nombre original</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="pago" type="text" class="form-control" id="pago" value="">
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="pago" class="col-md-4 col-lg-3 col-form-label">Código interno</label>
+                      <label for="pago" class="col-md-4 col-lg-3 col-form-label">Nombre FB</label>
                       <div class="col-md-8 col-lg-9">
                         <input name="pago" type="text" class="form-control" id="pago" value="">
                       </div>
@@ -370,132 +406,274 @@
                     <div class="row mb-3">
                       <label for="pago" class="col-md-4 col-lg-3 col-form-label">Categoría</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="pago" type="text" class="form-control" id="pago" value="">
+                        <select class="form-select">
+                          <option value="" >Selecciona una categoría</option>
+                          <option value="Adaptador">Adaptador</option>
+                          <option value="Asiento">Asiento</option>
+                          <option value="Cadena">Cadena</option>
+                          <option value="Caja">Caja</option>
+                          <option value="Caja pedalera">Caja pedalera</option>
+                          <option value="Cámara">Cámara</option>
+                          <option value="Canasto">Canasto</option>
+                          <option value="Collar">Collar</option>
+                          <option value="Cuadro">Cuadro</option>
+                          <option value="Discos">Discos</option>
+                          <option value="Espaciador">Espaciador</option>
+                          <option value="Fondo de llanta">Fondo de llanta</option>
+                          <option value="Frenos">Frenos</option>
+                          <option value="Funda de asiento">Funda de asiento</option>
+                          <option value="Fusible">Fusible</option>
+                          <option value="Horquilla">Horquilla</option>
+                          <option value="Inflador">Inflador</option>
+                          <option value="Juego de Direccion">Juego de Dirección</option>
+                          <option value="Linga">Linga</option>
+                          <option value="Llanta">Llanta</option>
+                          <option value="Manija integrada">Manija integrada</option>
+                          <option value="Manijas de Freno">Manijas de Freno</option>
+                          <option value="Manubrio">Manubrio</option>
+                          <option value="Maza">Maza</option>
+                          <option value="Mazas">Mazas</option>
+                          <option value="Palancas">Palancas</option>
+                          <option value="Pedales">Pedales</option>
+                          <option value="Piñon">Piñón</option>
+                          <option value="Plato Palanca">Plato Palanca</option>
+                          <option value="Portacaramañola">Portacaramañola</option>
+                          <option value="Portaequipaje">Portaequipaje</option>
+                          <option value="Protector de rayos">Protector de rayos</option>
+                          <option value="Puños">Puños</option>
+                          <option value="Rayos">Rayos</option>
+                          <option value="Shifter">Shifter</option>
+                          <option value="Stem">Stem</option>
+                          <option value="Transmision">Transmisión</option>
+                          <option value="Vela">Vela</option>
+                        </select>
+                        
                       </div>
                     </div>
                     
                     <div class="row mb-3">
-                      <label for="precioFinal" class="col-md-4 col-lg-3 col-form-label">Talle</label>
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Talle</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="precioFinal" type="text" class="form-control" id="precioFinal" value="">
+                        <select class="form-select" id="talleSelect" onchange="showCustomTalle()">
+                          <option value="">Selecciona un talle</option>
+                          <option value="S">S</option>
+                          <option value="M">M</option>
+                          <option value="S/M">S/M</option>
+                          <option value="L">L</option>
+                          <option value="x">X</option>
+                          <option value="Otro">Otro (Ingresar el número manualmente)</option>
+                        </select>
+                        <input type="text" id="customTalle" class="form-control mt-2" placeholder="Ingresa un talle" style="display:none;">
+                      </div>
+                      <script>
+                        function showCustomTalle() {
+                          var select = document.getElementById('talleSelect');
+                          var customTalleInput = document.getElementById('customTalle');
+                          
+                          // Si la opción seleccionada es "Otro", muestra el campo de texto para ingresar un talle
+                          if (select.value === 'Otro') {
+                            customTalleInput.style.display = 'block';
+                          } else {
+                            customTalleInput.style.display = 'none';
+                          }
+                        }
+                      </script>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Color</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select id="colorSelect" class="form-select" onchange="checkCustomColor()">
+                          <option value="">Selecciona un color</option>
+                          <option value="Amarillo">Amarillo</option>
+                          <option value="Amarillo brillante">Amarillo brillante</option>
+                          <option value="Amarillo Mate">Amarillo Mate</option>
+                          <option value="Azul">Azul</option>
+                          <option value="Blanco">Blanco</option>
+                          <option value="Blanco Nacar">Blanco Nacar</option>
+                          <option value="Cobre">Cobre</option>
+                          <option value="Cobre mate">Cobre mate</option>
+                          <option value="Crema">Crema</option>
+                          <option value="Crudo">Crudo</option>
+                          <option value="Cromada">Cromada</option>
+                          <option value="Cromado">Cromado</option>
+                          <option value="Fucsia Mate">Fucsia Mate</option>
+                          <option value="Gris">Gris</option>
+                          <option value="Laca">Laca</option>
+                          <option value="Marron">Marron</option>
+                          <option value="Marron/Crema">Marron/Crema</option>
+                          <option value="Negro">Negro</option>
+                          <option value="Negro/Amarillo">Negro/Amarillo</option>
+                          <option value="Negro/Blanco">Negro/Blanco</option>
+                          <option value="Negro/Cromado">Negro/Cromado</option>
+                          <option value="Negro/Dorado">Negro/Dorado</option>
+                          <option value="Negro/Rojo">Negro/Rojo</option>
+                          <option value="Negro/azul">Negro/azul</option>
+                          <option value="Negro/Gris">Negro/Gris</option>
+                          <option value="Negro/Naranja">Negro/Naranja</option>
+                          <option value="Negro/Rojo">Negro/Rojo</option>
+                          <option value="Negro/salpicado verde">Negro salpicado verde</option>
+                          <option value="Negro/Blanco">Negro/Blanco</option>
+                          <option value="Naranja">Naranja</option>
+                          <option value="Rojo">Rojo</option>
+                          <option value="Rosa">Rosa</option>
+                          <option value="Tricolor">Tricolor</option>
+                          <option value="Turquesa">Turquesa</option>
+                          <option value="Turquesa brillante">Turquesa brillante</option>
+                          <option value="Verde">Verde</option>
+                          <option value="Verde ingles">Verde ingles</option>
+                          <option value="Verde Militar">Verde Militar</option>
+                          <option value="Verde Militar mate">Verde Militar mate</option>
+                          <option value="Violeta">Violeta</option>
+                          <option value="Violeta Mate">Violeta Mate</option>
+                          <option value="Violeta Obispo Mate">Violeta Obispo Mate</option>
+                          <option value="Otro">Otro (Ingresar manualmente)</option>
+                        </select>
+                        
+                        <input type="text" id="customColor" class="form-control mt-2" placeholder="Escribe un color" style="display: none;">
+                        
+                        
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="precioFinal" class="col-md-4 col-lg-3 col-form-label">Color</label>
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Marca</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="precioFinal" type="text" class="form-control" id="precioFinal" value="">
+                        <select name="marca" id="marca" class="form-select">
+                          <option value="">Selecciona una marca</option>
+                          <option value="Arisun">Arisun</option>
+                          <option value="AWA">AWA</option>
+                          <option value="Bkzam">Bkzam</option>
+                          <option value="Chaoyang">Chaoyang</option>
+                          <option value="cstar">cstar</option>
+                          <option value="Citybike">Citybike</option>
+                          <option value="Deckas">Deckas</option>
+                          <option value="DDK">DDK</option>
+                          <option value="DSH">DSH</option>
+                          <option value="DSK">DSK</option>
+                          <option value="Eastman">Eastman</option>
+                          <option value="Eklind">Eklind</option>
+                          <option value="FAD">FAD</option>
+                          <option value="Fast">Fast</option>
+                          <option value="Feimin">Feimin</option>
+                          <option value="Fire Bird">Fire Bird</option>
+                          <option value="Forever Bikes">Forever Bikes</option>
+                          <option value="Gorilla">Gorilla</option>
+                          <option value="Hartex">Hartex</option>
+                          <option value="Hourus">Hourus</option>
+                          <option value="Innova">Innova</option>
+                          <option value="Imperial Cord">Imperial Cord</option>
+                          <option value="Kalloy">Kalloy</option>
+                          <option value="KMC">KMC</option>
+                          <option value="Kyowa">Kyowa</option>
+                          <option value="La ViejaCleta">La ViejaCleta</option>
+                          <option value="Ltwoo">Ltwoo</option>
+                          <option value="Logan">Logan</option>
+                          <option value="Lovit">Lovit</option>
+                          <option value="Mafla">Mafla</option>
+                          <option value="Maxxis">Maxxis</option>
+                          <option value="Millenium">Millenium</option>
+                          <option value="Mitas">Mitas</option>
+                          <option value="Neco">Neco</option>
+                          <option value="Neco">Neco</option>
+                          <option value="Ponely">Ponely</option>
+                          <option value="Power">Power</option>
+                          <option value="Pro">Pro</option>
+                          <option value="Quaxar">Quaxar</option>
+                          <option value="Raleigh">Raleigh</option>
+                          <option value="Redstone">Redstone</option>
+                          <option value="RLH">RLH</option>
+                          <option value="Shimano">Shimano</option>
+                          <option value="Shin">Shin</option>
+                          <option value="Shunfeng">Shunfeng</option>
+                          <option value="Stermey Archer">Stermey Archer</option>
+                          <option value="Specialized">Specialized</option>
+                          <option value="Sunrace">Sunrace</option>
+                          <option value="Tektro">Tektro</option>
+                          <option value="Topmega">Topmega</option>
+                          <option value="Tubi">Tubi</option>
+                          <option value="Twok">Twok</option>
+                          <option value="Velo">Velo</option>
+                          <option value="Venzo">Venzo</option>
+                          <option value="WKNS">WKNS</option>
+                          <option value="Zoom">Zoom</option>
+                        </select>                        
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="precioFinal" class="col-md-4 col-lg-3 col-form-label">Marca</label>
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Atributo 1</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="precioFinal" type="text" class="form-control" id="precioFinal" value="">
+                        <input name=" " type="text" class="form-control" id=" " value="">
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="precioFinal" class="col-md-4 col-lg-3 col-form-label">Atributo 1</label>
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Atributo 2</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="precioFinal" type="text" class="form-control" id="precioFinal" value="">
+                        <input name=" " type="text" class="form-control" id=" " value="">
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="precioFinal" class="col-md-4 col-lg-3 col-form-label">Atributo 2</label>
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Costo</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="precioFinal" type="text" class="form-control" id="precioFinal" value="">
+                        <input name=" " type="text" class="form-control" id=" " value="">
                       </div>
                     </div>
 
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Costo USD</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name=" " type="text" class="form-control" id=" " value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Stock</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name=" " type="text" class="form-control" id=" " value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Cantidad x bulto</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name=" " type="text" class="form-control" id=" " value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Bulto</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name=" " type="text" class="form-control" id=" " value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">WEB</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1">Si, online</option>
+                          <option value="2">No, offline</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for=" " class="col-md-4 col-lg-3 col-form-label">Ubicación</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select class="form-select" aria-label="Default select example">
+                          <option value="1">Salón</option>
+                          <option value="2">Depósito</option>
+                        </select>
+                      </div>
+                    </div>
 
                     <button class="btn btn-success">Guardar cambios</button>
 
                   </form><!-- End Profile Edit Form -->
 
-                </div>
-
-                <div class="tab-pane fade profile-edit pt-3" id="history">
-                  <table class="table table-borderless datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">N° de orden</th>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Fecha de entrega</th>
-                        <th scope="col">Total</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">#202</th>
-                        <td>Bici Aero</td>
-                        <td><span class="text-primary text-uppercase">Entregada</span></td>
-                        <td><span class="badge bg-success">10/07/2024</span></td>
-                        <td><span class="badge bg-primary">$842.000</span></td>
-                        <td>
-                          <!-- ver -->
-                          <a class="btn btn-primary p-1" href="./detalle-cliente.html">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#210</th>
-                        <td>Bolso matero</td>
-                        <td><span class="text-primary text-uppercase">Entregado</span></td>
-                        <td><span class="badge bg-success">12/03/2023</span></td>
-                        <td><span class="badge bg-primary">$42.000</span></td>
-                        <td>
-                          <!-- ver -->
-                          <a class="btn btn-primary p-1" href="./detalle-cliente.html">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#120</th>
-                        <td>Services</td>
-                        <td><span class="text-primary text-uppercase">Entregado</span></td>
-                        <td><span class="badge bg-success">07/05/2024</span></td>
-                        <td><span class="badge bg-primary">$32.000</span></td>
-                        <td>
-                          <!-- ver -->
-                          <a class="btn btn-primary p-1" href="./detalle-cliente.html">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#520</th>
-                        <td>Services</td>
-                        <td><span class="text-primary text-uppercase">Entregado</span></td>
-                        <td><span class="badge bg-success">12/12/2024</span></td>
-                        <td><span class="badge bg-primary">$70.000</span></td>
-                        <td>
-                          <!-- ver -->
-                          <a class="btn btn-primary p-1" href="./detalle-cliente.html">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">#20</th>
-                        <td>Asiento gel</td>
-                        <td><span class="text-primary text-uppercase">Entregado</span></td>
-                        <td><span class="badge bg-success">05/10/2023</span></td>
-                        <td><span class="badge bg-primary">$12.000</span></td>
-                        <td>
-                          <!-- ver -->
-                          <a class="btn btn-primary p-1" href="./detalle-cliente.html">
-                            <i class="bi bi-eye"></i>
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                 </div>
 
               </div><!-- End Bordered Tabs -->
@@ -531,6 +709,27 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    window.onload = function() {
+      var selects = document.querySelectorAll('select');
+      selects.forEach(function(select) {
+        select.value = ""; // Establece el valor a vacío para todos los select
+      });
+    };
+
+    function checkCustomColor() {
+      var select = document.getElementById("colorSelect");
+      var customInput = document.getElementById("customColor");
+      if (select.value === "Otro") {
+        customInput.style.display = "block";
+        customInput.focus();
+      } else {
+        customInput.style.display = "none";
+        customInput.value = "";
+      }
+    }
+    
+  </script>
 </body>
 
 </html>
