@@ -327,6 +327,16 @@
           <div class="card">
             <div class="card-body">
             <a class="btn btn-success my-3" href="./add-service.html">+ Agregar service</a>
+            <!-- Alert -->
+            <div id="successAlert" class="alert alert-success alert-dismissible fade show d-none mt-3" role="alert">
+              🤘 Service eliminado correctamente.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <!-- Alert -->
+            <div id="successAlert2" class="alert alert-success alert-dismissible fade show d-none mt-3" role="alert">
+              🤘 Service confirmado como ENTREGADO correctamente.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
@@ -349,16 +359,20 @@
                     <td>50%</td>
                     <td>$875.000</td>
                     <td>
+                      <!-- pasar a entregado 
+                       <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>-->
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -370,16 +384,20 @@
                     <td>50%</td>
                     <td>$408.000</td>
                     <td>
+                      <!-- pasar a entregado -->
+                      <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -391,16 +409,20 @@
                     <td>50%</td>
                     <td>$888.000</td>
                     <td>
+                      <!-- pasar a entregado -->
+                      <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -412,16 +434,20 @@
                     <td>50%</td>
                     <td>$863.000</td>
                     <td>
+                      <!-- pasar a entregado 
+                      <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>-->
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -433,16 +459,20 @@
                     <td>50%</td>
                     <td>$652.000</td>
                     <td>
+                      <!-- pasar a entregado 
+                      <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>-->
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -454,16 +484,20 @@
                     <td>50%</td>
                     <td>$740.000</td>
                     <td>
+                      <!-- pasar a entregado 
+                      <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>-->
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -475,16 +509,20 @@
                     <td>50%</td>
                     <td>$490.000</td>
                     <td>
+                      <!-- pasar a entregado 
+                      <button class="btn btn-success p-1" onclick="confirmarService()" title="Confirmar la entrega">
+                        <i class="bi bi-check-circle-fill"></i>
+                      </button>-->
                       <!-- ver -->
-                      <button class="btn btn-primary p-1">
+                      <button class="btn btn-primary p-1" onclick="verDetalleService()" title="Ver service">
                         <i class="bi bi-eye"></i>
                       </button>
                       <!-- editar -->
-                      <button class="btn btn-warning p-1">
+                      <button class="btn btn-warning p-1" onclick="editarService()" title="Editar service">
                         <i class="bi bi-pencil"></i>
                       </button>
                       <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
+                      <button class="btn btn-danger p-1" onclick="confirmarEliminacion()" title="Eliminar service">
                         <i class="bi bi-trash"></i>
                       </button>
                     </td>
@@ -513,6 +551,45 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-black text-white card">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Confirmar Eliminación</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            🙄 ¿Estás seguro de que vas a eliminar este service? 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger" onclick="eliminarService()">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de confirmación service ENTREGADO -->
+    <div class="modal fade" id="confirmServiceModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-black text-white card">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Confirmar service ENTREGADO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            🙄 ¿Confirmas que el service ha sido entregado? 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger" onclick="confirmarServiceAlert()">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -525,6 +602,61 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function verDetalleService() {
+      window.location.href = "detalle-service.html";
+    }
+
+    function editarService() {
+      window.location.href = "detalle-service.html?tab=edit";
+    }
+
+    function confirmarEliminacion() {
+    var modal = new bootstrap.Modal(document.getElementById('confirmDeleteModal'));
+    modal.show();
+    }
+
+
+    function eliminarService() {
+      // Cerrar el modal
+      var modalEl = document.getElementById('confirmDeleteModal');
+      var modalInstance = bootstrap.Modal.getInstance(modalEl);
+      modalInstance.hide();
+
+      // Mostrar alerta de éxito
+      var successAlert = document.getElementById('successAlert');
+      successAlert.classList.remove('d-none');
+      
+      // Opcional: Ocultar la alerta después de 3 segundos
+      setTimeout(() => {
+        successAlert.classList.add('d-none');
+      }, 3000);
+    }
+    
+    function confirmarService() {
+      var modal = new bootstrap.Modal(document.getElementById('confirmServiceModal'));
+      modal.show();
+    }
+
+    function confirmarServiceAlert() {
+      // Cerrar el modal
+      var modalEl = document.getElementById('confirmServiceModal');
+      var modalInstance = bootstrap.Modal.getInstance(modalEl);
+      modalInstance.hide();
+
+      // Mostrar alerta de éxito
+      var successAlert = document.getElementById('successAlert2');
+      successAlert.classList.remove('d-none');
+      
+      // Opcional: Ocultar la alerta después de 3 segundos
+      setTimeout(() => {
+        successAlert.classList.add('d-none');
+      }, 3000);
+    }
+
+  
+  </script>
 
 </body>
 

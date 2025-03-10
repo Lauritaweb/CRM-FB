@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nuevo service - Forever Bikes</title>
+  <title>Detalle service - Forever Bikes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -307,30 +307,144 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Alta de Service</h1>
+      <h1>
+        <i class="bi bi-person-lines-fill"></i>
+        DETALLE CLIENTE
+      </h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
           <li class="breadcrumb-item"><a href="./servicies.html">Services</a></li>
-          <li class="breadcrumb-item">Alta de service</li>
+          <li class="breadcrumb-item">Detalle service</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section profile">
       <div class="row">
+        <div class="col-xl-12 d-flex">
+
+          <div class="card">
+            <div class="card-body pt-4 d-flex align-items-center">
+              
+              <div>
+                <h2 class="text-white fs-4">Revilla, Daniela</h2>
+                <h3 class="text-white fs-6">nicolasjuare@gmail.com</h3>
+                <h3 class="text-white fs-6">11234568</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
         <div class="col-xl-12">
 
           <div class="card text-white">
             <div class="card-body pt-3">
-             
-              
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
 
-                <div class="pt-3" id="">
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Service</button>
+                </li>
 
-                  <!-- service  Form -->
-                  <form>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar datos</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#history">Ver historial</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Cliente</div>
+                      <div class="col-lg-9 col-md-8">Revilla, Daniela</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Celular</div>
+                      <div class="col-lg-9 col-md-8">1156787523</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Email</div>
+                      <div class="col-lg-9 col-md-8">danile@gmail.com</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Bici</div>
+                      <div class="col-lg-9 col-md-8">Bicicross Pro X</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Fecha</div>
+                      <div class="col-lg-9 col-md-8">2025-03-12</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Trabajo</div>
+                      <div class="col-lg-9 col-md-8">Cambio de llantas y ajuste de frenos</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Service</div>
+                      <div class="col-lg-9 col-md-8">Full Externo</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Estado</div>
+                      <div class="col-lg-9 col-md-8 text-warning">Pendiente</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Próximo service</div>
+                      <div class="col-lg-9 col-md-8">2025-04-15</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Precio base</div>
+                      <div class="col-lg-9 col-md-8">$5,000</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">% Pago (adelanto)</div>
+                      <div class="col-lg-9 col-md-8">$2,500</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Estado del Service</div>
+                      <div class="col-lg-9 col-md-8">En curso</div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <div class="col-lg-3 col-md-4 label">Componentes</div>
+                      <div class="col-lg-9 col-md-8">
+                        <ul>
+                          <li>Patines x 2</li>
+                          <li>Cables</li>
+                          <li>Guardabarros</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3 mt-5 d-flex">
+                      <div class="col-lg-3 col-md-4 label">TOTAL</div>
+                      <div class="col-lg-9 col-md-8">
+                        <p class="fs-2 text-warning">$150.020</p>
+                      </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                   <!-- service  Form -->
+                   <form>
                   
                     <div class="row mb-3">
                       <label for="cliente" class="col-md-4 col-lg-3 col-form-label">Cliente</label>
@@ -514,7 +628,89 @@
 
                 </div>
 
-              
+                <div class="tab-pane fade profile-edit pt-3" id="history">
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">N° de orden</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Fecha de entrega</th>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">#202</th>
+                        <td>Bici Aero</td>
+                        <td><span class="text-primary text-uppercase">Entregada</span></td>
+                        <td><span class="badge bg-success">10/07/2024</span></td>
+                        <td><span class="badge bg-primary">$842.000</span></td>
+                        <td>
+                          <!-- ver -->
+                          <a class="btn btn-primary p-1" href="./detalle-venta.html">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#210</th>
+                        <td>Bolso matero</td>
+                        <td><span class="text-primary text-uppercase">Entregado</span></td>
+                        <td><span class="badge bg-success">12/03/2023</span></td>
+                        <td><span class="badge bg-primary">$42.000</span></td>
+                        <td>
+                          <!-- ver -->
+                          <a class="btn btn-primary p-1" href="./detalle-venta.html">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#120</th>
+                        <td>Services</td>
+                        <td><span class="text-primary text-uppercase">Entregado</span></td>
+                        <td><span class="badge bg-success">07/05/2024</span></td>
+                        <td><span class="badge bg-primary">$32.000</span></td>
+                        <td>
+                          <!-- ver -->
+                          <a class="btn btn-primary p-1" href="./detalle-venta.html">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#520</th>
+                        <td>Services</td>
+                        <td><span class="text-primary text-uppercase">Entregado</span></td>
+                        <td><span class="badge bg-success">12/12/2024</span></td>
+                        <td><span class="badge bg-primary">$70.000</span></td>
+                        <td>
+                          <!-- ver -->
+                          <a class="btn btn-primary p-1" href="./detalle-venta.html">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">#20</th>
+                        <td>Asiento gel</td>
+                        <td><span class="text-primary text-uppercase">Entregado</span></td>
+                        <td><span class="badge bg-success">05/10/2023</span></td>
+                        <td><span class="badge bg-primary">$12.000</span></td>
+                        <td>
+                          <!-- ver -->
+                          <a class="btn btn-primary p-1" href="./detalle-venta.html">
+                            <i class="bi bi-eye"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div><!-- End Bordered Tabs -->
 
             </div>
           </div>
@@ -544,69 +740,25 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    let btnAgregar = document.getElementById("agregarComponente");
-    let contenedor = document.getElementById("componentes-container");
-
-    if (!btnAgregar || !contenedor) {
-        console.error("El botón o el contenedor de componentes no existen en el DOM.");
-        return;
-    }
-
-    btnAgregar.addEventListener("click", function () {
-        let nuevoComponente = document.createElement("div");
-        nuevoComponente.classList.add("componente", "mt-2");
-
-        let nuevoLabel = document.createElement("label");
-        nuevoLabel.textContent = "Componente:";
-
-        let nuevoSelect = document.createElement("select");
-        nuevoSelect.classList.add("form-select");
-        nuevoSelect.innerHTML = `
-            <option value="">Seleccionar</option>
-            <option value="patines-x2">Patines x 2</option>
-            <option value="cables">Cables</option>
-            <option value="cableado-completo">Cableado completo</option>
-            <option value="cableado">Cableado</option>
-            <option value="cableado-x2">Cableado x2</option>
-            <option value="puños">Puños</option>
-            <option value="caja">Caja</option>
-            <option value="cadena-single">Cadena Single</option>
-            <option value="cadena-cambios">Cadena Cambios</option>
-            <option value="cadena-shimano">Cadena Shimano</option>
-            <option value="cadena-especial">Cadena Especial</option>
-            <option value="camara-35">Camara 35</option>
-            <option value="camara-presta">Camara Presta</option>
-            <option value="camara-presta-60">Camara presta 60</option>
-            <option value="camara-29">Camara 29</option>
-            <option value="stem-sbk-positivo">STEM SBK POSITIVO</option>
-            <option value="manubrio-paseo">MANUBRIO PASEO</option>
-            <option value="guardabarros">GUARDABARROS</option>
-            <option value="espejo">ESPEJO</option>
-            <option value="forma-lovit">FORMA LOVIT</option>
-            <option value="porta-camagn">PORTA CAMAGN</option>
-            <option value="apertura-de-mazas">Apertura de mazas</option>
-        `;
-
-        let nuevoInput = document.createElement("input");
-        nuevoInput.type = "text";
-        nuevoInput.classList.add("form-control", "mt-2", "col-md-8", "col-lg-9");
-        nuevoInput.placeholder = "Precio del componente";
-
-        nuevoComponente.appendChild(nuevoLabel);
-        nuevoComponente.appendChild(nuevoSelect);
-        nuevoComponente.appendChild(nuevoInput);
-
-        contenedor.appendChild(nuevoComponente);
-    });
-});
-
-
-  </script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const tab = params.get("tab");
+  
+      if (tab === "edit") {
+        // Desactiva la pestaña activa actual
+        document.querySelector('.nav-link.active')?.classList.remove('active');
+        document.querySelector('.tab-pane.active')?.classList.remove('show', 'active');
+  
+        // Activa la pestaña "Editar datos"
+        document.querySelector('[data-bs-target="#profile-edit"]').classList.add('active');
+        document.querySelector('#profile-edit').classList.add('show', 'active');
+      }
+    });
+  </script>
 
 </body>
 

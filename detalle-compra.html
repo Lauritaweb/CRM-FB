@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nuevo service - Forever Bikes</title>
+  <title>Detalle compra - Forever Bikes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -307,12 +307,15 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Alta de Service</h1>
+      <h1>
+        <i class="bi bi-person-lines-fill"></i>
+        DETALLE COMPRA
+      </h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="./servicies.html">Services</a></li>
-          <li class="breadcrumb-item">Alta de service</li>
+          <li class="breadcrumb-item"><a href="./compras.html">Compras</a></li>
+          <li class="breadcrumb-item">Detalle compra</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -324,197 +327,110 @@
 
           <div class="card text-white">
             <div class="card-body pt-3">
-             
-              
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
 
-                <div class="pt-3" id="">
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Compra</button>
+                </li>
 
-                  <!-- service  Form -->
-                  <form>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar datos</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-4 label">Fecha</div>
+                    <div class="col-lg-9 col-md-8">2024-03-10</div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-4 label">Emisor</div>
+                    <div class="col-lg-9 col-md-8">Juan Pérez</div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-4 label">Tipo</div>
+                    <div class="col-lg-9 col-md-8">Factura A</div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-4 label">Punto de venta</div>
+                    <div class="col-lg-9 col-md-8">0001</div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-4 label">N° de Factura</div>
+                    <div class="col-lg-9 col-md-8">0001-12345678</div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-4 label">Importe</div>
+                    <div class="col-lg-9 col-md-8">$25,000.00</div>
+                  </div>
+                  
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                   <!-- compra  Form -->
+                   <form>
                   
                     <div class="row mb-3">
-                      <label for="cliente" class="col-md-4 col-lg-3 col-form-label">Cliente</label>
-                      <div class="col-md-8 col-lg-9">
-                          <select id="clientes" name="clientes" class="form-select">
-                            <option value="">Seleccione un cliente</option>
-                            <option value="Leon, Maria Carlina">Leon, Maria Carlina</option>
-                            <option value="Guarrochena, Candela">Guarrochena, Candela</option>
-                            <option value="Checchi, Clara">Checchi, Clara</option>
-                            <option value="Rodriguez, Gabriela laura">Rodriguez, Gabriela laura</option>
-                            <option value="Szlapak, Ariel">Szlapak, Ariel</option>
-                            <option value="Corti, Paula">Corti, Paula</option>
-                            <option value="Revilla, Daniela">Revilla, Daniela</option>
-                            <option value="Chirinos, Andrea">Chirinos, Andrea</option>
-                            <option value="Fraschina, Rosina Maria">Fraschina, Rosina Maria</option>
-                            <option value="Moreno, Santiago">Moreno, Santiago</option>
-                            <option value="Demonte, Carolina">Demonte, Carolina</option>
-                            <option value="Torres, Carla">Torres, Carla</option>
-                            <option value="Marchesi, Alejandro">Marchesi, Alejandro</option>
-                            <option value="Venturino, Majo">Venturino, Majo</option>
-                            <option value="Dambrosio, Josefina">Dambrosio, Josefina</option>
-                        </select>
+                      <label for="norden" class="col-lg-4 col-form-label">Fecha</label>
+                      <div class="col-lg-8">
+                        <input name="" type="date" class="form-control" id="" value="2024-03-10">
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Celular</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="1156787523" disabled>
+                      <label for="norden" class="col-lg-4 col-form-label">Emisor</label>
+                      <div class="col-lg-8">
+                        <input name="" type="text" class="form-control" id="" value="Juan Pérez">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="norden" class="col-lg-4 col-form-label">Tipo</label>
+                      <div class="col-lg-8">
+                        <input name="" type="text" class="form-control" id="" value="Factura A">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="norden" class="col-lg-4 col-form-label">Punto de venta</label>
+                      <div class="col-lg-8">
+                        <input name="" type="text" class="form-control" id="" value="0001">
                       </div>
                     </div>
                   
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Email</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="danile@gmail.com" disabled>
+                      <label for="norden" class="col-lg-4 col-form-label">N° de Factura</label>
+                      <div class="col-lg-8">
+                        <input name="" type="text" class="form-control" id="" value="0001">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="norden" class="col-lg-4 col-form-label">Importe</label>
+                      <div class="col-lg-8">
+                        <input name="" type="text" class="form-control" id="" value="$25,000.00">
                       </div>
                     </div>
                   
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Bici</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="" >
-                      </div>
-                    </div>
-                   
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Fecha</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="date" class="form-control" id="" value="" >
-                      </div>
-                    </div>
+                    <button class="btn btn-success mt-3 w-100">Guardar cambios</button>
 
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Trabajo</label>
-                      <div class="col-md-8 col-lg-9">
-                        <!-- <input name="" type="text" class="form-control" id="" value="" > -->
-                         <textarea name="" id="" class="form-control"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Service</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select id="clientes" name="clientes" class="form-select">
-                          <option value="">Seleccione un service</option>
-                          <option value="">Full Forever</option>
-                          <option value="">Regulación Forever</option>
-                          <option value="">Full Externo</option>
-                          <option value="">Regulación Externo</option>
-                          <option value="">Regulación ligera</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Estado</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select id="" name="" class="form-select">
-                          <option value="">Seleccione un estado</option>
-                          <option value="">Entregado</option>
-                          <option value="">Pendiente</option>
-                          <option value="">Vencido</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Próximo service</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="date" class="form-control" id="" value="" >
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Precio base</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="" >
-                      </div>
-                    </div>
-
-                    <!-- <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Precio total</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="$15.000" disabled>                      
-                      </div>
-                    </div> -->
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">% Pago (adelanto)</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="$15.000" disabled>                      
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Service</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select id="clientes" name="clientes" class="form-select">
-                          <option value="">Seleccione un estado</option>
-                          <option value="">En curso</option>
-                          <option value="">Avisado</option>
-                          <option value="">Consultar</option>
-                        </select>
-                      </div>
-                    </div>
-                   
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Componentes</label>
-                      <div class="col-md-8 col-lg-9">
-                        <button type="button" id="agregarComponente" class="btn btn-primary">
-                          Agregar Componente
-                        </button>
-                        <div id="componentes-container">
-                          <div class="componente">
-                            <select name="componentes" class="form-select d-none" id="proveedorComponente" onchange="checkCustomComponente()">
-                              <option value="">Seleccione un componente</option>
-                              <option value="">NADA</option>
-                              <option value="varios">Varios</option>
-                              <option value="patines-x2">Patines x 2</option>
-                              <option value="cables">Cables</option>
-                              <option value="cableado-completo">Cableado completo</option>
-                              <option value="cableado">Cableado</option>
-                              <option value="cableado-x2">Cableado x2</option>
-                              <option value="puños">Puños</option>
-                              <option value="caja">Caja</option>
-                              <option value="cadena-single">Cadena Single</option>
-                              <option value="cadena-cambios">Cadena Cambios</option>
-                              <option value="cadena-shimano">Cadena Shimano</option>
-                              <option value="cadena-especial">Cadena Especial</option>
-                              <option value="camara-35">Camara 35</option>
-                              <option value="camara-presta">Camara Presta</option>
-                              <option value="camara-presta-60">Camara presta 60</option>
-                              <option value="camara-29">Camara 29</option>
-                              <option value="stem-sbk-positivo">STEM SBK POSITIVO</option>
-                              <option value="manubrio-paseo">MANUBRIO PASEO</option>
-                              <option value="guardabarros">GUARDABARROS</option>
-                              <option value="espejo">ESPEJO</option>
-                              <option value="forma-lovit">FORMA LOVIT</option>
-                              <option value="porta-camagn">PORTA CAMAGN</option>
-                              <option value="apertura-de-mazas">Apertura de mazas</option>
-                              <option value="Otro">Otro (Ingresar manualmente)</option>
-                            </select>     
-                            <input type="text" id="customComponente" class="form-control mt-2" placeholder="Escribe un componente" style="display: none;">                                       
-                            
-                          </div>        
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row mb-3 mt-5 d-flex">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label ">TOTAL</label>
-                      <div class="col-md-8 col-lg-9">
-                        <p class="fs-2 text-warning">$150.020</p>                     
-                      </div>
-                    </div>
-
-                    <button class="btn btn-success w-100 mt-3">Guardar cambios</button>
+                  </form>
+                  
 
                   </form><!-- End add service Form -->
 
                 </div>
 
-              
+              </div><!-- End Bordered Tabs -->
 
             </div>
           </div>
@@ -544,69 +460,25 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    let btnAgregar = document.getElementById("agregarComponente");
-    let contenedor = document.getElementById("componentes-container");
-
-    if (!btnAgregar || !contenedor) {
-        console.error("El botón o el contenedor de componentes no existen en el DOM.");
-        return;
-    }
-
-    btnAgregar.addEventListener("click", function () {
-        let nuevoComponente = document.createElement("div");
-        nuevoComponente.classList.add("componente", "mt-2");
-
-        let nuevoLabel = document.createElement("label");
-        nuevoLabel.textContent = "Componente:";
-
-        let nuevoSelect = document.createElement("select");
-        nuevoSelect.classList.add("form-select");
-        nuevoSelect.innerHTML = `
-            <option value="">Seleccionar</option>
-            <option value="patines-x2">Patines x 2</option>
-            <option value="cables">Cables</option>
-            <option value="cableado-completo">Cableado completo</option>
-            <option value="cableado">Cableado</option>
-            <option value="cableado-x2">Cableado x2</option>
-            <option value="puños">Puños</option>
-            <option value="caja">Caja</option>
-            <option value="cadena-single">Cadena Single</option>
-            <option value="cadena-cambios">Cadena Cambios</option>
-            <option value="cadena-shimano">Cadena Shimano</option>
-            <option value="cadena-especial">Cadena Especial</option>
-            <option value="camara-35">Camara 35</option>
-            <option value="camara-presta">Camara Presta</option>
-            <option value="camara-presta-60">Camara presta 60</option>
-            <option value="camara-29">Camara 29</option>
-            <option value="stem-sbk-positivo">STEM SBK POSITIVO</option>
-            <option value="manubrio-paseo">MANUBRIO PASEO</option>
-            <option value="guardabarros">GUARDABARROS</option>
-            <option value="espejo">ESPEJO</option>
-            <option value="forma-lovit">FORMA LOVIT</option>
-            <option value="porta-camagn">PORTA CAMAGN</option>
-            <option value="apertura-de-mazas">Apertura de mazas</option>
-        `;
-
-        let nuevoInput = document.createElement("input");
-        nuevoInput.type = "text";
-        nuevoInput.classList.add("form-control", "mt-2", "col-md-8", "col-lg-9");
-        nuevoInput.placeholder = "Precio del componente";
-
-        nuevoComponente.appendChild(nuevoLabel);
-        nuevoComponente.appendChild(nuevoSelect);
-        nuevoComponente.appendChild(nuevoInput);
-
-        contenedor.appendChild(nuevoComponente);
-    });
-});
-
-
-  </script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const params = new URLSearchParams(window.location.search);
+      const tab = params.get("tab");
+  
+      if (tab === "edit") {
+        // Desactiva la pestaña activa actual
+        document.querySelector('.nav-link.active')?.classList.remove('active');
+        document.querySelector('.tab-pane.active')?.classList.remove('show', 'active');
+  
+        // Activa la pestaña "Editar datos"
+        document.querySelector('[data-bs-target="#profile-edit"]').classList.add('active');
+        document.querySelector('#profile-edit').classList.add('show', 'active');
+      }
+    });
+  </script>
 
 </body>
 
