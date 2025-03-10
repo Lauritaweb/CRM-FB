@@ -1293,7 +1293,7 @@ label,
   color:#f70180 !important;
 }
 table.datatable{
-  width: 80vw;
+  /* width: 80vw; */
   overflow-x: scroll;
 }
 table td{
@@ -1304,11 +1304,9 @@ body{
   overflow-x: hidden;
 }
 
-table.datatable tr:nth-child(even){
-    background-color: #f2f2f2!important;
-  }
-  
-table.datatable tr{  /* Resalta fila al pasar el mouse */
-    background-color: #ddd!important;
-  }
-
+.datatable-wrapper.no-footer .datatable-container{
+  border-bottom: 0;
+}
+.datatable-container{
+  overflow-x: scroll;
+}

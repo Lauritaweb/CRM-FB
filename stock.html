@@ -328,8 +328,8 @@
     </div><!-- End Page Title -->
 
     <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="row card">
+        <div class="col-lg-12 card-body pt-3">
 
           <!-- tabs -->
           <!-- Bordered Tabs -->
@@ -349,7 +349,17 @@
 
           <div class="tab-content pt-2">
             <a class="btn btn-success my-3" href="./add-stock.html">+ Agregar stock</a>
-            <button class="btn btn-info my-3">+ Agregar categoría</button>
+            <button class="btn btn-info my-3" data-bs-toggle="modal" data-bs-target="#categoriaModal">+ Agregar categoría</button>
+            <!-- Alert -->
+            <div id="successAlert" class="alert alert-success alert-dismissible fade show d-none mt-3" role="alert">
+              🤘 Producto eliminado correctamente.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <!-- Alert new cat -->
+            <div id="successAlert2" class="alert alert-success alert-dismissible fade show d-none mt-3" role="alert">
+              🤘 Categoría cargada correctamente.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <div class="tab-pane fade show active profile-overview" id="stock">
                 <table class="table datatable">
                   <thead>
@@ -380,12 +390,16 @@
                       <td>50</td>
                       <td>4</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1" onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1" onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -402,8 +416,12 @@
                       <td>30</td>
                       <td>4</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
@@ -424,8 +442,12 @@
                       <td>50</td>
                       <td>4</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
@@ -446,8 +468,12 @@
                       <td>50</td>
                       <td>4</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
@@ -468,8 +494,12 @@
                       <td>50</td>
                       <td>4</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
@@ -490,12 +520,16 @@
                       <td>30</td>
                       <td>4</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -530,12 +564,16 @@
                       <td>12</td>
                       <td>salón</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -549,12 +587,16 @@
                       <td>12</td>
                       <td>salón</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -568,12 +610,16 @@
                       <td>20</td>
                       <td>salón</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -587,12 +633,16 @@
                       <td>5</td>
                       <td>salón</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -606,12 +656,16 @@
                       <td>3</td>
                       <td>salón</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -625,12 +679,16 @@
                       <td>12</td>
                       <td>salón</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -671,12 +729,16 @@
                       <td>.</td>
                       <td>MEDIO</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -693,12 +755,16 @@
                       <td>.</td>
                       <td>.</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -715,12 +781,16 @@
                       <td>.</td>
                       <td>MEDIO / MULTI</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -737,12 +807,16 @@
                       <td>.</td>
                       <td>MEDIO</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -759,12 +833,16 @@
                       <td>.</td>
                       <td>.</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -781,12 +859,16 @@
                       <td>.</td>
                       <td>MEDIO</td>
                       <td class="d-flex gap-1">
+                        <!-- ver -->
+                        <button class="btn btn-primary p-1" onclick="verDetalleStock()">
+                          <i class="bi bi-eye"></i>
+                        </button>
                         <!-- editar -->
-                        <button class="btn btn-warning p-1">
+                        <button class="btn btn-warning p-1"  onclick="editarStock()">
                           <i class="bi bi-pencil"></i>
                         </button>
                         <!-- eliminar -->
-                        <button class="btn btn-danger p-1">
+                        <button class="btn btn-danger p-1"  onclick="confirmarEliminacion()">
                           <i class="bi bi-trash"></i>
                         </button>
                       </td>
@@ -818,6 +900,46 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Modal de confirmación -->
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black text-white card">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Confirmar Eliminación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          🙄 ¿Estás seguro de que vas a eliminar este producto del stock? 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger" onclick="eliminarStock()">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal nueva categoria-->
+  <div class="modal fade" id="categoriaModal" tabindex="-1" aria-labelledby="categoriaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-black text-white card">
+        <div class="modal-header">
+          <h5 class="modal-title" id="categoriaModalLabel">Agregar nueva categoría</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!-- Cruz de cierre -->
+        </div>
+        <div class="modal-body">
+          <form id="categoriaForm">
+            <div class="mb-3">
+              <label for="categoriaNombre" class="form-label">Nombre de la Categoría</label>
+              <input type="text" class="form-control" id="categoriaNombre" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar Categoría</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -830,6 +952,62 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function verDetalleStock() {
+      window.location.href = "detalle-stock.html";
+    }
+    function editarStock() {
+      window.location.href = "detalle-stock.html?tab=edit";
+    }
+    function confirmarEliminacion() {
+      var modal = new bootstrap.Modal(document.getElementById('confirmDeleteModal'));
+      modal.show();
+    }
+    function eliminarStock() {
+        // Cerrar el modal
+        var modalEl = document.getElementById('confirmDeleteModal');
+        var modalInstance = bootstrap.Modal.getInstance(modalEl);
+        modalInstance.hide();
+
+        // Mostrar alerta de éxito
+        var successAlert = document.getElementById('successAlert');
+        successAlert.classList.remove('d-none');
+        
+        // Opcional: Ocultar la alerta después de 3 segundos
+        setTimeout(() => {
+          successAlert.classList.add('d-none');
+        }, 3000);
+   }
+      
+  // modal new cat
+  document.getElementById('categoriaForm').addEventListener('submit', function(e) {
+  e.preventDefault(); // Evitar que el formulario se envíe de manera convencional
+
+  // Obtener el valor del input
+  const categoriaNombre = document.getElementById('categoriaNombre').value;
+
+  // Lógica para guardar la categoría (aquí se puede hacer un request a un servidor, si es necesario)
+
+  // Mostrar el alert de éxito
+  const alertSuccess = document.getElementById('successAlert2');
+  alertSuccess.classList.remove('d-none'); // Mostrar el alert
+
+  // Limpiar el campo del input
+  document.getElementById('categoriaNombre').value = '';
+
+  // Cerrar el modal
+  const modal = bootstrap.Modal.getInstance(document.getElementById('categoriaModal'));
+  modal.hide(); // Esto cierra el modal correctamente
+
+  // Ocultar el alert después de 3 segundos
+  setTimeout(function() {
+    alertSuccess.classList.add('d-none');
+  }, 3000); // 3000ms = 3 segundos
+});
+
+
+
+  </script>
 
 </body>
 
