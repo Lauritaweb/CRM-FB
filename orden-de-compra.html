@@ -25,6 +25,10 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
+  <!-- pdf -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -264,7 +268,7 @@
         <li class="nav-item">
           <a class="nav-link" href="./servicies.html">
             <i class="bi bi-gear-fill"></i>
-            <span>Gestión de Servicios</span>
+            Gestión de Services
           </a>
         </li>
   
@@ -283,23 +287,10 @@
         </li>
   
         <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-            <i class="bi bi-file-earmark-check"></i><span>Gestión de ordenes / presupuestos</span><i class="bi bi-chevron-down ms-auto"></i>
+          <a class="nav-link" href="./presupuestos.html">
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            <span>Generar presupuesto</span>
           </a>
-          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-            <li>
-              <a class="nav-link"  href="./orden-de-compra.html">
-                <i class="bi bi-file-earmark-plus"></i>
-                <span>Orden de compra</span>
-              </a>
-            </li>
-            <li>
-              <a class="nav-link"  href="./presupuestos.html">
-                <i class="bi bi-file-earmark-richtext"></i>
-                <span>Presupuestos</span>
-              </a>
-            </li>
-          </ul>
         </li>
   
       </ul>
@@ -311,13 +302,14 @@
       <h1>ORDEN DE COMPRA</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="./compras.html">Compras</a></li>
           <li class="breadcrumb-item">Orden de compra</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section card">
+    <section class="section card" id="order-content">
       <div class="row card-body">
           <div class="col-md-6">
               <div class="card-body">
@@ -339,11 +331,11 @@
             <div class="row mb-2">
               <label for="" class="col-md-4 col-lg-3 col-form-label">Fecha</label>
               <div class="col-md-8 col-lg-9">
-                <input name="" type="date" class="form-control" id="" value="" disabled>
+                <input name="" type="date" class="form-control" id="" value="">
               </div>
             </div>
             <div class="row mb-2">
-              <label for="" class="col-md-4 col-lg-3 col-form-label">N° orden</label>
+              <label for="" class="col-md-4 col-lg-3 col-form-label">N° orden de compra</label>
                 <div class="col-md-8 col-lg-9">
                   <input name="" type="text" class="form-control" id="" value="#456" disabled>
                 </div>
@@ -353,18 +345,56 @@
           <!--orden -->
           <div class="col-md-6 mt-3">
             <div class="row mb-2 mt-5">
-              <label for="" class="col-md-4 col-lg-3 col-form-label">Nombre</label>
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Proveedor</label>
               <div class="col-md-8 col-lg-9">
-                <input name="" type="date" class="form-control" id="" value="" disabled>
+                <select id="proveedorSelect" class="form-select" onchange="checkCustomProveedor()">
+                  <option value="">Selecciona un proveedor</option>
+                  <option value="Barrani">Barrani</option>
+                  <option value="Dalsanto">Dalsanto</option>
+                  <option value="FAD">FAD</option>
+                  <option value="Ferrari">Ferrari</option>
+                  <option value="Forever Bikes">Forever Bikes</option>
+                  <option value="Hourus">Hourus</option>
+                  <option value="Lugano">Lugano</option>
+                  <option value="LVC">LVC</option>
+                  <option value="MAFLA">MAFLA</option>
+                  <option value="Magma">Magma</option>
+                  <option value="Maza Trabocchi">Maza Trabocchi</option>
+                  <option value="Mitas">Mitas</option>
+                  <option value="Nitro">Nitro</option>
+                  <option value="Pereyra">Pereyra</option>
+                  <option value="Pulpeiro">Pulpeiro</option>
+                  <option value="Reynoso">Reynoso</option>
+                  <option value="Shimano">Shimano</option>
+                  <option value="Sucabikes">Sucabikes</option>
+                  <option value="Otro">Otro (Ingresar manualmente)</option>
+                </select>    
+                <input type="text" id="customProveedor" class="form-control mt-2" placeholder="Escribe un proveedor" style="display: none;">                    
               </div>
             </div>
+            <script>
+              function checkCustomProveedor() {
+                var select = document.getElementById("proveedorSelect");
+                var customInput = document.getElementById("customProveedor");
+            
+                console.log("Categoria seleccionado:", select.value); // Para verificar en consola si funciona
+            
+                if (select.value === "Otro") {
+                  customInput.style.display = "block";
+                  customInput.focus();
+                } else {
+                  customInput.style.display = "none";
+                  customInput.value = "";
+                }
+              }
+            </script>
             <div class="row mb-2">
               <label for="" class="col-md-4 col-lg-3 col-form-label">Domicilio</label>
                 <div class="col-md-8 col-lg-9">
-                  <input name="" type="text" class="form-control" id="" value="">
+                  <input name="" type="text" class="form-control" id="" value="Av. Siempre Viva 123, Buenos Aires, Argentina" disabled>
                 </div>
             </div>
-            <div class="row mb-2">
+            <!-- <div class="row mb-2">
               <label for="" class="col-md-4 col-lg-3 col-form-label">Localidad</label>
                 <div class="col-md-8 col-lg-9">
                   <input name="" type="text" class="form-control" id="" value="">
@@ -375,102 +405,120 @@
                 <div class="col-md-8 col-lg-9">
                   <input name="" type="text" class="form-control" id="" value="">
                 </div>
-            </div>
+            </div> -->
           </div><!-- End col6 -->
 
           <!--orden -->
           <div class="col-md-6 mt-3">
             <div class="row mb-2 mt-5">
-              <label for="" class="col-md-4 col-lg-3 col-form-label">Celular</label>
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Contacto</label>
               <div class="col-md-8 col-lg-9">
-                <input name="" type="text" class="form-control" id="" value="">
+                <input name="" type="text" class="form-control" id="" value="154976545" disabled>
               </div>
-            </div>
-            <div class="row mb-2">
-              <label for="" class="col-md-4 col-lg-3 col-form-label">C.P</label>
-                <div class="col-md-8 col-lg-9">
-                  <input name="" type="text" class="form-control" id="" value="">
-                </div>
-            </div>
-            <div class="row mb-2">
-              <label for="" class="col-md-4 col-lg-3 col-form-label">Provincia</label>
-                <div class="col-md-8 col-lg-9">
-                  <input name="" type="text" class="form-control" id="" value="">
-                </div>
             </div>
             <div class="row mb-2">
               <label for="" class="col-md-4 col-lg-3 col-form-label">Email</label>
                 <div class="col-md-8 col-lg-9">
-                  <input name="" type="text" class="form-control" id="" value="">
+                  <input name="" type="text" class="form-control" id="" value="ventas@distribuidora.com" disabled>
                 </div>
             </div>
           </div><!-- End col6 -->
-<hr>
+          <hr>
           <!-- table -->
           <table class="table px-3">
             <tr>
               <th>Producto</th>
-              <th>Descripción</th>
               <th>Cantidad</th>
               <th>Precio</th>
             </tr>
             <tr>
               <td>
-                <select name="modelo" class="form-select">
-                  <option value="">Selecciona un modelo</option>
-                  <option value="urbana_1_velocidad">Urbana 1 Velocidad</option>
-                  <option value="cx_1_velocidad">Cx 1 Velocidad</option>
-                  <option value="cx_6v_1.71">Cx 6V altura 1.71</option>
-                  <option value="urbana_3v">Urbana 3V</option>
-                  <option value="cx_6v_aluminio">Cx 6V Aluminio</option>
-                  <option value="cx_6_velocidades">Cx 6 Velocidades</option>
-                </select>
+                <input name="" type="text" class="form-control" id="" value="">
               </td>
-              <td><label>Modelo urbano de 6 velocidades</label></td>
-              <td><label>1</label></td>
-              <td><label>$150.000</label></td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="">
+              </td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="">
+              </td>
             </tr>
             <tr>
               <td>
-                <select name="modelo" class="form-select">
-                  <option value="">Selecciona un modelo</option>
-                  <option value="urbana_1_velocidad">Urbana 1 Velocidad</option>
-                  <option value="cx_1_velocidad">Cx 1 Velocidad</option>
-                  <option value="cx_6v_1.71">Cx 6V altura 1.71</option>
-                  <option value="urbana_3v">Urbana 3V</option>
-                  <option value="cx_6v_aluminio">Cx 6V Aluminio</option>
-                  <option value="cx_6_velocidades">Cx 6 Velocidades</option>
-                </select>
+                <input name="" type="text" class="form-control" id="" value="">
               </td>
-              <td><label>Modelo urbano de 6 velocidades</label></td>
-              <td><label>1</label></td>
-              <td><label>$150.000</label></td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="">
+              </td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="">
+              </td>
             </tr>
             <tr>
               <td>
-                <select name="modelo" class="form-select">
-                  <option value="">Selecciona un modelo</option>
-                  <option value="urbana_1_velocidad">Urbana 1 Velocidad</option>
-                  <option value="cx_1_velocidad">Cx 1 Velocidad</option>
-                  <option value="cx_6v_1.71">Cx 6V altura 1.71</option>
-                  <option value="urbana_3v">Urbana 3V</option>
-                  <option value="cx_6v_aluminio">Cx 6V Aluminio</option>
-                  <option value="cx_6_velocidades">Cx 6 Velocidades</option>
-                </select>
+                <input name="" type="text" class="form-control" id="" value="">
               </td>
-              <td><label>Modelo urbano de 6 velocidades</label></td>
-              <td><label>1</label></td>
-              <td><label>$150.000</label></td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="">
+              </td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="">
+              </td>
             </tr>
             
           </table>
           <div class="col-md-12">
-            <label for="" class="fs-3 text-warning">Total: $250.000</label>
+            <button class="btn btn-primary" id="agregarComponente">+ Agregar producto</button>
+            <button class="btn btn-danger" id="eliminarComponente">Eliminar producto</button> <br>
+            <label for="" class="fs-3 text-warning mt-3">Total: $250.000</label>
           </div>
           <div class="col-md-12 mt-4">
-            <button class="btn btn-primary">+ Agregar producto</button>
-            <button class="btn btn-success">Descargar PDF</button>
+            <button class="btn btn-success" id="generate-pdf">Descargar PDF</button>
           </div>
+
+          <script>
+            document.getElementById("agregarComponente").addEventListener("click", function() {
+            const table = document.querySelector(".table");
+            const tbody = table.querySelector("tbody") || table;
+            const newRow = document.createElement("tr");
+
+            // Crear celdas con inputs
+            const productoCell = document.createElement("td");
+            const productoInput = document.createElement("select");
+            productoInput.type = "text";
+            productoInput.classList.add("form-control");
+            productoCell.appendChild(productoInput);
+
+            const cantidadCell = document.createElement("td");
+            const cantidadInput = document.createElement("input");
+            cantidadInput.type = "text";
+            cantidadInput.classList.add("form-control");
+            cantidadCell.appendChild(cantidadInput);
+
+            const precioCell = document.createElement("td");
+            const precioInput = document.createElement("input");
+            precioInput.type = "text";
+            precioInput.classList.add("form-control");
+            precioCell.appendChild(precioInput);
+
+            // Agregar celdas a la fila
+            newRow.appendChild(productoCell);
+            newRow.appendChild(cantidadCell);
+            newRow.appendChild(precioCell);
+
+            // Agregar fila a la tabla
+            tbody.appendChild(newRow);
+          });
+
+          // Eliminar la última fila agregada
+          document.getElementById("eliminarComponente").addEventListener("click", function() {
+            const table = document.querySelector(".table");
+            const rows = table.querySelectorAll("tr");
+            if (rows.length > 1) {
+              rows[rows.length - 1].remove();
+            }
+          });
+
+          </script>
 
         </div><!-- end row -->
 
@@ -498,7 +546,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+ 
 
 </body>
 

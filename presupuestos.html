@@ -255,7 +255,7 @@
         <li class="nav-item">
           <a class="nav-link" href="./servicies.html">
             <i class="bi bi-gear-fill"></i>
-            <span>Gestión de Servicios</span>
+            Gestión de Services
           </a>
         </li>
   
@@ -274,23 +274,10 @@
         </li>
   
         <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-            <i class="bi bi-file-earmark-check"></i><span>Gestión de ordenes / presupuestos</span><i class="bi bi-chevron-down ms-auto"></i>
+          <a class="nav-link" href="./presupuestos.html">
+            <i class="bi bi-file-earmark-arrow-down"></i>
+            <span>Generar presupuesto</span>
           </a>
-          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-            <li>
-              <a class="nav-link"  href="./orden-de-compra.html">
-                <i class="bi bi-file-earmark-plus"></i>
-                <span>Orden de compra</span>
-              </a>
-            </li>
-            <li>
-              <a class="nav-link"  href="./presupuestos.html">
-                <i class="bi bi-file-earmark-richtext"></i>
-                <span>Presupuestos</span>
-              </a>
-            </li>
-          </ul>
         </li>
   
       </ul>
@@ -308,186 +295,213 @@
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
+    <section class="section card" id="order-content">
+      <div class="row card-body">
+          <div class="col-md-6">
+              <div class="card-body">
+                <img src="./assets/img/logo.png" alt="" style="width: 150px;">
+                <h5 class="card-title">FOREVER BIKES ARGENTINA</h5>
+                <div class="d-flex align-items-center">
+                  <div class="text-white">
+                    <p>Castillo 1332<br>		
+                      Villa Crespo, CABA<br>
+                      1159446031<br>
+                      foreverbikesarg@gmail.com	</p>
+                  </div>
+                </div>
+              </div>
+          </div><!-- End col6 -->
 
-          <div class="card d-none">
-            <div class="card-body">
-            <button class="btn btn-success my-3">+ Agregar cliente</button>
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th>
-                      <b>N° de orden</b>
-                    </th>
-                    <th>Cliente</th>
-                    <th>Estado</th>
-                    <th>% de Pago</th>
-                    <th>Total</th>
-                    <th>Acción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#01</td>
-                    <td>Nicolás Juares</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>50%</td>
-                    <td>$875.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#02</td>
-                    <td>Jose Cuervo</td>
-                    <td class="text-uppercase">Pendiente</td>
-                    <td>50%</td>
-                    <td>$408.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#03</td>
-                    <td>Laura Osbourne</td>
-                    <td class="text-uppercase">Pendiente</td>
-                    <td>50%</td>
-                    <td>$888.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#04</td>
-                    <td>Dante Avalle</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>50%</td>
-                    <td>$863.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#05</td>
-                    <td>Monica Perez</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>50%</td>
-                    <td>$652.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#06</td>
-                    <td>Julian Suarez</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>50%</td>
-                    <td>$740.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#07</td>
-                    <td>Mariana Ariza</td>
-                    <td class="text-uppercase">Entregada</td>
-                    <td>50%</td>
-                    <td>$490.000</td>
-                    <td>
-                      <!-- ver -->
-                      <button class="btn btn-primary p-1">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <!-- editar -->
-                      <button class="btn btn-warning p-1">
-                        <i class="bi bi-pencil"></i>
-                      </button>
-                      <!-- eliminar -->
-                      <button class="btn btn-danger p-1">
-                        <i class="bi bi-trash"></i>
-                      </button>
-                    </td>
-                  </tr>
-                
-                  
-                </tbody>
-              </table>
-              <!-- End Table with stripped rows -->
-
+          <!--orden -->
+          <div class="col-md-6 d-flex justify-content-end flex-column">
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Fecha</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="" type="date" class="form-control" id="" value="">
+              </div>
             </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">N° de presupuesto</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="#01" disabled>
+                </div>
+            </div>
+          </div><!-- End col6 -->
+
+          <!--orden -->
+          <div class="col-md-6 mt-3">
+            <div class="row mb-2 mt-5">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Nombre</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="" type="text" class="form-control" id="" value="">
+              </div>
+            </div>
+            
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Domicilio</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="" >
+                </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">DNI</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div> 
+          </div><!-- End col6 -->
+
+          <!--orden -->
+          <div class="col-md-6 mt-3">
+            <div class="row mb-2 mt-5">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Contacto</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="" type="text" class="form-control" id="" value="154976545" disabled>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="ventas@distribuidora.com" disabled>
+                </div>
+            </div>
+          </div><!-- End col6 -->
+          <hr>
+          <!-- table -->
+          <table class="table px-3">
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+            </tr>
+            <tr>
+              <td>
+                <select name="" id="" class="form-select">
+                  <option value="">Seleccionar un producto</option>
+                  <option value="asiento_mtb_antipro">ASIENTO MTB ANTIPRO. ANCHO CON GEL FIRE BIRD</option>
+                  <option value="asiento_playero">Asiento Playero marron</option>
+                  <option value="asiento_ddk_d376">ASIENTO DDK MOD. D376 SCALA</option>
+                  <option value="asiento_mtb_eco">ASIENTO MTB ECO NEGRO-GRIS - DDK</option>
+                  <option value="asiento_ddk_d2375">ASIENTO DDK MOD.D 2375 RHEA</option>
+                  <option value="asiento_mtb_antipro_negro_blanco">ASIENTO MTB ANTIPROSTATICO NEGRO-BLANCO - DDK</option>
+                  <option value="asiento_mtb_antipro_negro_azul">ASIENTO MTB ANTIPROSTATICO NEGRO-AZUL - DDK</option>
+                  <option value="asiento_ddk_d3211fs">ASIENTO DDK MOD. D3211FS ET</option>
+                  <option value="cable_freno_1800">CABLE FRENO TRASERO 1800mm</option>
+                  <option value="cable_freno_2200">CABLE FRENO TRASERO 2200mm</option>
+                  <option value="cadena_p410">CADENA 1/2x1/8 - P-410 CROMADA - TAIWAN</option>
+                  <option value="cadena_x410">CADENA 1/2x1/8x108 - X-410 - RLH</option>
+                  <option value="cadena_100_eslabones">Cadena 1/2x1/8 x100L - 100 eslabones</option>
+                  <option value="cadena_p7001">CADENA P7001 - 7/8V - 116 ESLABONES - RLH</option>
+                  <option value="cadena_shimano">Cadena Shimano CUES CN-LG500 9/10/11V</option>
+                  <option value="cartridge_347_110">CARTRIDGE 34.7mm DER-IZQ 110mm</option>
+                  <option value="cartucho_35_68_118">CARTUCHO 35 *68*118MM DER/DER BLINDADO RULEMAN TOPMEGA</option>
+                  <option value="caja_pedalera_neco">Caja pedalera NECO semisellada 34.7 - 113mm</option>
+                  <option value="cartridge_347_123">CARTRIDGE 34.7mm DER/IZQ - 123mm - CHINA</option>
+                  <option value="caja_pedalera_kenli">Caja pedalera KENLI semisellada 34.7 - 110mm</option>
+                  <option value="camara_700_32">CAMARA 700 x 32-35 VALVULA AMERICANA LARGA - KYOWA</option>
+                  <option value="camara_700_20">CAMARA 700 x 20 VALVULA FRANCESA 48mm - KYOWA</option>
+                  <option value="camara_700_20_60">CAMARA 700 x 20 VALVULA FRANCESA 60mm - KYOWA</option>
+                  <option value="camara_26_175">CAMARA 26 x 1.75 - 2.125 VALVULA AMERICANA LARGA 48MM - KYOWA</option>
+                  <option value="camara_26_150">CAMARA 26 x 1.50 VALVULA AMERICANA - KYOWA</option>
+                </select>
+              </td>
+              <td>
+                <input name="" type="number" class="form-control" id="" value="">
+              </td>
+              <td>
+                <input name="" type="text" class="form-control" id="" value="$150.000" disabled>
+              </td>
+            </tr>
+            
+          </table>
+          <div class="col-md-12">
+            <button class="btn btn-primary" id="agregarComponente">+ Agregar producto</button>
+            <button class="btn btn-danger" id="eliminarComponente">Eliminar producto</button> <br>
+            <label for="" class="fs-3 text-warning mt-3">Total: $250.000</label>
+          </div>
+          <div class="col-md-12 mt-4">
+            <button class="btn btn-success" id="generate-pdf">Descargar PDF</button>
           </div>
 
-        </div>
-      </div>
+          <script>
+            document.getElementById("agregarComponente").addEventListener("click", function() {
+            const table = document.querySelector(".table");
+            const tbody = table.querySelector("tbody") || table;
+            const newRow = document.createElement("tr");
+
+            // Crear celdas con inputs
+            const productoCell = document.createElement("td");
+            const productoInput = document.createElement("select");
+            productoInput.classList.add("form-select");
+            // productoInput.type = "text";
+            productoInput.innerHTML= `
+                          <option value="">Seleccionar</option>
+                          <option value="adaptador">Adaptador de cambio trasero para grandes piñones</option>
+                          <option value="asiento_mtb_antipro">ASIENTO MTB ANTIPRO. ANCHO CON GEL FIRE BIRD</option>
+                          <option value="asiento_playero">Asiento Playero marron</option>
+                          <option value="asiento_ddk_d376">ASIENTO DDK MOD. D376 SCALA</option>
+                          <option value="asiento_mtb_eco">ASIENTO MTB ECO NEGRO-GRIS - DDK</option>
+                          <option value="asiento_ddk_d2375">ASIENTO DDK MOD.D 2375 RHEA</option>
+                          <option value="asiento_mtb_antipro_negro_blanco">ASIENTO MTB ANTIPROSTATICO NEGRO-BLANCO - DDK</option>
+                          <option value="asiento_mtb_antipro_negro_azul">ASIENTO MTB ANTIPROSTATICO NEGRO-AZUL - DDK</option>
+                          <option value="asiento_ddk_d3211fs">ASIENTO DDK MOD. D3211FS ET</option>
+                          <option value="cable_freno_1800">CABLE FRENO TRASERO 1800mm</option>
+                          <option value="cable_freno_2200">CABLE FRENO TRASERO 2200mm</option>
+                          <option value="cadena_p410">CADENA 1/2x1/8 - P-410 CROMADA - TAIWAN</option>
+                          <option value="cadena_x410">CADENA 1/2x1/8x108 - X-410 - RLH</option>
+                          <option value="cadena_100_eslabones">Cadena 1/2x1/8 x100L - 100 eslabones</option>
+                          <option value="cadena_p7001">CADENA P7001 - 7/8V - 116 ESLABONES - RLH</option>
+                          <option value="cadena_shimano">Cadena Shimano CUES CN-LG500 9/10/11V</option>
+                          <option value="cartridge_347_110">CARTRIDGE 34.7mm DER-IZQ 110mm</option>
+                          <option value="cartucho_35_68_118">CARTUCHO 35 *68*118MM DER/DER BLINDADO RULEMAN TOPMEGA</option>
+                          <option value="caja_pedalera_neco">Caja pedalera NECO semisellada 34.7 - 113mm</option>
+                          <option value="cartridge_347_123">CARTRIDGE 34.7mm DER/IZQ - 123mm - CHINA</option>
+                          <option value="caja_pedalera_kenli">Caja pedalera KENLI semisellada 34.7 - 110mm</option>
+                          <option value="camara_700_32">CAMARA 700 x 32-35 VALVULA AMERICANA LARGA - KYOWA</option>
+                          <option value="camara_700_20">CAMARA 700 x 20 VALVULA FRANCESA 48mm - KYOWA</option>
+                          <option value="camara_700_20_60">CAMARA 700 x 20 VALVULA FRANCESA 60mm - KYOWA</option>
+                          <option value="camara_26_175">CAMARA 26 x 1.75 - 2.125 VALVULA AMERICANA LARGA 48MM - KYOWA</option>
+                          <option value="camara_26_150">CAMARA 26 x 1.50 VALVULA AMERICANA - KYOWA</option>
+        `;
+  
+            productoCell.appendChild(productoInput);
+
+            const cantidadCell = document.createElement("td");
+            const cantidadInput = document.createElement("input");
+            cantidadInput.type = "number";
+            cantidadInput.classList.add("form-control");
+            cantidadCell.appendChild(cantidadInput);
+
+            const precioCell = document.createElement("td");
+            const precioInput = document.createElement("input");
+            precioInput.type = "text";
+            precioInput.classList.add("form-control");
+            precioInput.disabled="true";
+            precioInput.value="$100.000"
+            precioCell.appendChild(precioInput);
+
+            // Agregar celdas a la fila
+            newRow.appendChild(productoCell);
+            newRow.appendChild(cantidadCell);
+            newRow.appendChild(precioCell);
+
+            // Agregar fila a la tabla
+            tbody.appendChild(newRow);
+          });
+
+          // Eliminar la última fila agregada
+          document.getElementById("eliminarComponente").addEventListener("click", function() {
+            const table = document.querySelector(".table");
+            const rows = table.querySelectorAll("tr");
+            if (rows.length > 1) {
+              rows[rows.length - 1].remove();
+            }
+          });
+
+          </script>
+
+        </div><!-- end row -->
+
     </section>
 
   </main><!-- End #main -->
