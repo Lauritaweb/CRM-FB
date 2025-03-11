@@ -317,39 +317,163 @@
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12 row">
-
-          
-           <!-- Reports -->
-           <div class="col-md-8" >
-            <div class="card info-card customers-card">
+    <section class="section card">
+      <div class="row card-body">
+          <div class="col-md-6">
               <div class="card-body">
+                <img src="./assets/img/logo.png" alt="" style="width: 150px;">
                 <h5 class="card-title">FOREVER BIKES ARGENTINA</h5>
                 <div class="d-flex align-items-center">
                   <div class="text-white">
                     <p>Castillo 1332<br>		
                       Villa Crespo, CABA<br>
                       1159446031<br>
-                      Foreverbikesarg@gmail.com	</p>
+                      foreverbikesarg@gmail.com	</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div><!-- End Reports -->
+          </div><!-- End col6 -->
 
-          <!-- Reports -->
-          <div class="col-md-4" >
-            <div class="card info-card customers-card" >
-              <div class="card-body">
-                
+          <!--orden -->
+          <div class="col-md-6 d-flex justify-content-end flex-column">
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Fecha</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="" type="date" class="form-control" id="" value="" disabled>
               </div>
             </div>
-          </div><!-- End Reports -->
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">N° orden</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="#456" disabled>
+                </div>
+            </div>
+          </div><!-- End col6 -->
 
-        </div>
-      </div>
+          <!--orden -->
+          <div class="col-md-6 mt-3">
+            <div class="row mb-2 mt-5">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Nombre</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="" type="date" class="form-control" id="" value="" disabled>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Domicilio</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Localidad</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">DNI | CUIT | CUIL</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div>
+          </div><!-- End col6 -->
+
+          <!--orden -->
+          <div class="col-md-6 mt-3">
+            <div class="row mb-2 mt-5">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Celular</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="" type="text" class="form-control" id="" value="">
+              </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">C.P</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Provincia</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div>
+            <div class="row mb-2">
+              <label for="" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                <div class="col-md-8 col-lg-9">
+                  <input name="" type="text" class="form-control" id="" value="">
+                </div>
+            </div>
+          </div><!-- End col6 -->
+<hr>
+          <!-- table -->
+          <table class="table px-3">
+            <tr>
+              <th>Producto</th>
+              <th>Descripción</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+            </tr>
+            <tr>
+              <td>
+                <select name="modelo" class="form-select">
+                  <option value="">Selecciona un modelo</option>
+                  <option value="urbana_1_velocidad">Urbana 1 Velocidad</option>
+                  <option value="cx_1_velocidad">Cx 1 Velocidad</option>
+                  <option value="cx_6v_1.71">Cx 6V altura 1.71</option>
+                  <option value="urbana_3v">Urbana 3V</option>
+                  <option value="cx_6v_aluminio">Cx 6V Aluminio</option>
+                  <option value="cx_6_velocidades">Cx 6 Velocidades</option>
+                </select>
+              </td>
+              <td><label>Modelo urbano de 6 velocidades</label></td>
+              <td><label>1</label></td>
+              <td><label>$150.000</label></td>
+            </tr>
+            <tr>
+              <td>
+                <select name="modelo" class="form-select">
+                  <option value="">Selecciona un modelo</option>
+                  <option value="urbana_1_velocidad">Urbana 1 Velocidad</option>
+                  <option value="cx_1_velocidad">Cx 1 Velocidad</option>
+                  <option value="cx_6v_1.71">Cx 6V altura 1.71</option>
+                  <option value="urbana_3v">Urbana 3V</option>
+                  <option value="cx_6v_aluminio">Cx 6V Aluminio</option>
+                  <option value="cx_6_velocidades">Cx 6 Velocidades</option>
+                </select>
+              </td>
+              <td><label>Modelo urbano de 6 velocidades</label></td>
+              <td><label>1</label></td>
+              <td><label>$150.000</label></td>
+            </tr>
+            <tr>
+              <td>
+                <select name="modelo" class="form-select">
+                  <option value="">Selecciona un modelo</option>
+                  <option value="urbana_1_velocidad">Urbana 1 Velocidad</option>
+                  <option value="cx_1_velocidad">Cx 1 Velocidad</option>
+                  <option value="cx_6v_1.71">Cx 6V altura 1.71</option>
+                  <option value="urbana_3v">Urbana 3V</option>
+                  <option value="cx_6v_aluminio">Cx 6V Aluminio</option>
+                  <option value="cx_6_velocidades">Cx 6 Velocidades</option>
+                </select>
+              </td>
+              <td><label>Modelo urbano de 6 velocidades</label></td>
+              <td><label>1</label></td>
+              <td><label>$150.000</label></td>
+            </tr>
+            
+          </table>
+          <div class="col-md-12">
+            <label for="" class="fs-3 text-warning">Total: $250.000</label>
+          </div>
+          <div class="col-md-12 mt-4">
+            <button class="btn btn-primary">+ Agregar producto</button>
+            <button class="btn btn-success">Descargar PDF</button>
+          </div>
+
+        </div><!-- end row -->
+
     </section>
 
   </main><!-- End #main -->

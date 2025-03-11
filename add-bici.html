@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nuevo service - Forever Bikes</title>
+  <title>Nueva venta de bici - Forever Bikes</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -242,7 +242,7 @@
       <li class="nav-item">
         <a class="nav-link" href="./clientes.html">
           <i class="bi bi-person-lines-fill"></i>
-          <span>Gestión de clientes</span>
+          <span>Gestión de Clientes</span>
         </a>
       </li>
 
@@ -307,12 +307,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Alta de Service</h1>
+      <h1>Alta de venta de bicicleta</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="./servicies.html">Services</a></li>
-          <li class="breadcrumb-item">Alta de service</li>
+          <li class="breadcrumb-item"><a href="./ventas.html">Ventas</a></li>
+          <li class="breadcrumb-item">Alta de venta de bici</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -321,20 +321,27 @@
       <div class="row">
 
         <div class="col-xl-12">
-
-          <div class="card text-white">
+          <a href="./add-cliente.html" class="btn btn-success">
+            <i class="bi bi-person-lines-fill"></i> Agregar cliente
+          </a>
+          <div class="card text-white mt-3">
             <div class="card-body pt-3">
-             
-              
 
                 <div class="pt-3" id="">
 
-                  <!-- service  Form -->
                   <form>
+
+                    <!-- Información de la venta -->
+                    <div class="row mb-3">
+                      <label for="norden" class="col-lg-4 col-form-label">N° orden</label>
+                      <div class="col-lg-8">
+                        <input name="norden" type="text" class="form-control" id="norden" value="#01" disabled>
+                      </div>
+                    </div>
                   
                     <div class="row mb-3">
-                      <label for="cliente" class="col-md-4 col-lg-3 col-form-label">Cliente</label>
-                      <div class="col-md-8 col-lg-9">
+                      <label for="cliente" class="col-lg-4 col-form-label">Cliente</label>
+                      <div class="col-lg-8">
                           <select id="clientes" name="clientes" class="form-select">
                             <option value="">Seleccione un cliente</option>
                             <option value="Leon, Maria Carlina">Leon, Maria Carlina</option>
@@ -355,166 +362,225 @@
                         </select>
                       </div>
                     </div>
-
+                  
+                    <!-- Características del producto -->
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Celular</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="1156787523" disabled>
+                      <label for="modelo" class="col-lg-4 col-form-label">Producto</label>
+                      <div class="col-lg-8">
+                        <select class="form-select">
+                          <option value="">Seleccione un producto</option>
+                          <option value="adaptador">Adaptador de cambio trasero para grandes piñones</option>
+                          <option value="asiento_mtb_antipro">ASIENTO MTB ANTIPRO. ANCHO CON GEL FIRE BIRD</option>
+                          <option value="asiento_playero">Asiento Playero marron</option>
+                          <option value="asiento_ddk_d376">ASIENTO DDK MOD. D376 SCALA</option>
+                          <option value="asiento_mtb_eco">ASIENTO MTB ECO NEGRO-GRIS - DDK</option>
+                          <option value="asiento_ddk_d2375">ASIENTO DDK MOD.D 2375 RHEA</option>
+                          <option value="asiento_mtb_antipro_negro_blanco">ASIENTO MTB ANTIPROSTATICO NEGRO-BLANCO - DDK</option>
+                          <option value="asiento_mtb_antipro_negro_azul">ASIENTO MTB ANTIPROSTATICO NEGRO-AZUL - DDK</option>
+                          <option value="asiento_ddk_d3211fs">ASIENTO DDK MOD. D3211FS ET</option>
+                          <option value="cable_freno_1800">CABLE FRENO TRASERO 1800mm</option>
+                          <option value="cable_freno_2200">CABLE FRENO TRASERO 2200mm</option>
+                          <option value="cadena_p410">CADENA 1/2x1/8 - P-410 CROMADA - TAIWAN</option>
+                          <option value="cadena_x410">CADENA 1/2x1/8x108 - X-410 - RLH</option>
+                          <option value="cadena_100_eslabones">Cadena 1/2x1/8 x100L - 100 eslabones</option>
+                          <option value="cadena_p7001">CADENA P7001 - 7/8V - 116 ESLABONES - RLH</option>
+                          <option value="cadena_shimano">Cadena Shimano CUES CN-LG500 9/10/11V</option>
+                          <option value="cartridge_347_110">CARTRIDGE 34.7mm DER-IZQ 110mm</option>
+                          <option value="cartucho_35_68_118">CARTUCHO 35 *68*118MM DER/DER BLINDADO RULEMAN TOPMEGA</option>
+                          <option value="caja_pedalera_neco">Caja pedalera NECO semisellada 34.7 - 113mm</option>
+                          <option value="cartridge_347_123">CARTRIDGE 34.7mm DER/IZQ - 123mm - CHINA</option>
+                          <option value="caja_pedalera_kenli">Caja pedalera KENLI semisellada 34.7 - 110mm</option>
+                          <option value="camara_700_32">CAMARA 700 x 32-35 VALVULA AMERICANA LARGA - KYOWA</option>
+                          <option value="camara_700_20">CAMARA 700 x 20 VALVULA FRANCESA 48mm - KYOWA</option>
+                          <option value="camara_700_20_60">CAMARA 700 x 20 VALVULA FRANCESA 60mm - KYOWA</option>
+                          <option value="camara_26_175">CAMARA 26 x 1.75 - 2.125 VALVULA AMERICANA LARGA 48MM - KYOWA</option>
+                          <option value="camara_26_150">CAMARA 26 x 1.50 VALVULA AMERICANA - KYOWA</option>
+                        </select>
+                        
                       </div>
                     </div>
                   
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Email</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="danile@gmail.com" disabled>
+                      <label for="valorModelo" class="col-lg-4 col-form-label">Valor modelo</label>
+                      <div class="col-lg-8">
+                        <input name="valorModelo" type="text" class="form-control" id="valorModelo" value="$700.000" disabled>
                       </div>
                     </div>
                   
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Bici</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="" >
-                      </div>
-                    </div>
-                   
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Fecha</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="date" class="form-control" id="" value="" >
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Trabajo</label>
-                      <div class="col-md-8 col-lg-9">
-                        <!-- <input name="" type="text" class="form-control" id="" value="" > -->
-                         <textarea name="" id="" class="form-control"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Service</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select id="clientes" name="clientes" class="form-select">
-                          <option value="">Seleccione un service</option>
-                          <option value="">Full Forever</option>
-                          <option value="">Regulación Forever</option>
-                          <option value="">Full Externo</option>
-                          <option value="">Regulación Externo</option>
-                          <option value="">Regulación ligera</option>
+                      <label for="cuadro" class="col-lg-4 col-form-label">Cuadro</label>
+                      <div class="col-lg-8">
+                        <select name="cuadro" class="form-select">
+                          <option value="">Seleccionar cuadro</option>
+                          <option value="Aero">Aero</option>
+                          <option value="Aero Cambios">Aero Cambios</option>
+                          <option value="Aero Tricolor">Aero Tricolor</option>
+                          <option value="Aluminio MTB">Aluminio MTB</option>
+                          <option value="Ciclo Ancho">Ciclo Ancho</option>
+                          <option value="Ciclo ancho">Ciclo ancho</option>
+                          <option value="Ciclo Dama Ancho">Ciclo Dama Ancho</option>
+                          <option value="Ciclo Fino">Ciclo Fino</option>
+                          <option value="Ciclo fino dama">Ciclo fino dama</option>
+                          <option value="Ciclo Fino Fad">Ciclo Fino Fad</option>
+                          <option value="Classic">Classic</option>
+                          <option value="Classic dama">Classic dama</option>
+                          <option value="Cuadros de paseo 28">Cuadros de paseo 28</option>
+                          <option value="Dama cambios">Dama cambios</option>
+                          <option value="Dama Single">Dama Single</option>
+                          <option value="Disco">Disco</option>
+                          <option value="Disco Ancho">Disco Ancho</option>
+                          <option value="Disco Dama">Disco Dama</option>
+                          <option value="FAD fino disco">FAD fino disco</option>
+                          <option value="FAD mtb">FAD mtb</option>
+                          <option value="Ingles">Ingles</option>
+                          <option value="Rutero aluminio">Rutero aluminio</option>
+                          <option value="Sport cambios">Sport cambios</option>
+                          <option value="Traclo Ancho">Traclo Ancho</option>
+                          <option value="Traclo Fino">Traclo Fino</option>
+                          <option value="Traclo fino">Traclo fino</option>
+                          <option value="Traclo Fino Dama">Traclo Fino Dama</option>
+                          <option value="Traveler Disco FAD">Traveler Disco FAD</option>
+                          <option value="Traveler DISCO FAD">Traveler DISCO FAD</option>
+                          <option value="Traveler FAD">Traveler FAD</option>
+                          <option value="Traveler Hourus">Traveler Hourus</option>
+                          <option value="Urbano Cambios Ancho">Urbano Cambios Ancho</option>
+                          <option value="Urbano fino cambios">Urbano fino cambios</option>
+                          <option value="urbano fino cambios dama">urbano fino cambios dama</option>
+                          <option value="Urbano Fino Dama SS">Urbano Fino Dama SS</option>
+                          <option value="Urbano SS">Urbano SS</option>
+                          <option value="Urbano SS Ancho">Urbano SS Ancho</option>
+                          <option value="Urbano SS Fino">Urbano SS Fino</option>
                         </select>
                       </div>
                     </div>
+                  
+                    <div class="row mb-3">
+                      <label for="valorCuadro" class="col-lg-4 col-form-label">Valor cuadro</label>
+                      <div class="col-lg-8">
+                        <input name="valorCuadro" type="text" class="form-control" id="valorCuadro" value="$50.000" disabled>
+                      </div>
+                    </div>
+                  
 
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Estado</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select id="" name="" class="form-select">
-                          <option value="">Seleccione un estado</option>
-                          <option value="">Entregado</option>
-                          <option value="">Pendiente</option>
-                          <option value="">Vencido</option>
+                      <label for="estado" class="col-lg-4 col-form-label">Estado</label>
+                      <div class="col-lg-8">
+                        <select name="estado" class="form-select">
+                          <option value="">Seleccione estado de la venta</option>
+                          <option value="1">Entregada</option>
+                          <option value="2">Pendiente</option>
+                          <option value="3">Enviado</option>
                         </select>
                       </div>
                     </div>
-
+                  
+                    <!-- Detalles de pago -->
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Próximo service</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="date" class="form-control" id="" value="" >
+                      <label for="precioLista" class="col-lg-4 col-form-label">Precio de lista</label>
+                      <div class="col-lg-8">
+                        <input name="precioLista" type="text" class="form-control" id="precioLista" value="$750.000" disabled>
                       </div>
                     </div>
-
+                  
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Precio base</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="" >
+                      <label for="precioFinal" class="col-lg-4 col-form-label">Precio final</label>
+                      <div class="col-lg-8">
+                        <input name="precioFinal" type="text" class="form-control" id="precioFinal" value="$820.000" disabled>
                       </div>
                     </div>
-
-                    <!-- <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Precio total</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="$15.000" disabled>                      
-                      </div>
-                    </div> -->
-
+                  
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">% Pago (adelanto)</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="" type="text" class="form-control" id="" value="$15.000" disabled>                      
+                      <label for="pago" class="col-lg-4 col-form-label">% de pago</label>
+                      <div class="col-lg-8">
+                        <input name="pago" type="text" class="form-control" id="pago" value="">
                       </div>
                     </div>
-
+                  
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Service</label>
-                      <div class="col-md-8 col-lg-9">
-                        <select id="clientes" name="clientes" class="form-select">
-                          <option value="">Seleccione un estado</option>
-                          <option value="">En curso</option>
-                          <option value="">Avisado</option>
-                          <option value="">Consultar</option>
+                      <label for="fpEfectivo" class="col-lg-4 col-form-label">Forma de pago</label>
+                      <div class="col-lg-8">
+                        <select name="pago" class="form-select">
+                          <option value="">Seleccione forma de pago</option>
+                          <option value="1">Efectivo</option>
+                          <option value="2">Tarjeta de crédito</option>
+                          <option value="3">Tarjeta de débito</option>
+                          <option value="4">Transferencia</option>
                         </select>
                       </div>
                     </div>
-                   
+                  
                     <div class="row mb-3">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label">Componentes</label>
-                      <div class="col-md-8 col-lg-9">
-                        <button type="button" id="agregarComponente" class="btn btn-primary">
-                          Agregar Componente
-                        </button>
-                        <div id="componentes-container">
-                          <div class="componente">
-                            <select name="componentes" class="form-select d-none" id="proveedorComponente" onchange="checkCustomComponente()">
-                              <option value="">Seleccione un componente</option>
-                              <option value="">NADA</option>
-                              <option value="varios">Varios</option>
-                              <option value="patines-x2">Patines x 2</option>
-                              <option value="cables">Cables</option>
-                              <option value="cableado-completo">Cableado completo</option>
-                              <option value="cableado">Cableado</option>
-                              <option value="cableado-x2">Cableado x2</option>
-                              <option value="puños">Puños</option>
-                              <option value="caja">Caja</option>
-                              <option value="cadena-single">Cadena Single</option>
-                              <option value="cadena-cambios">Cadena Cambios</option>
-                              <option value="cadena-shimano">Cadena Shimano</option>
-                              <option value="cadena-especial">Cadena Especial</option>
-                              <option value="camara-35">Camara 35</option>
-                              <option value="camara-presta">Camara Presta</option>
-                              <option value="camara-presta-60">Camara presta 60</option>
-                              <option value="camara-29">Camara 29</option>
-                              <option value="stem-sbk-positivo">STEM SBK POSITIVO</option>
-                              <option value="manubrio-paseo">MANUBRIO PASEO</option>
-                              <option value="guardabarros">GUARDABARROS</option>
-                              <option value="espejo">ESPEJO</option>
-                              <option value="forma-lovit">FORMA LOVIT</option>
-                              <option value="porta-camagn">PORTA CAMAGN</option>
-                              <option value="apertura-de-mazas">Apertura de mazas</option>
-                              <option value="Otro">Otro (Ingresar manualmente)</option>
-                            </select>     
-                            <input type="text" id="customComponente" class="form-control mt-2" placeholder="Escribe un componente" style="display: none;">                                       
-                            
-                          </div>        
-                        </div>
+                      <label for="recargo" class="col-lg-4 col-form-label">Recargo</label>
+                      <div class="col-lg-8">
+                        <input name="recargo" type="text" class="form-control" id="recargo" value="000">
                       </div>
                     </div>
-
-                    <div class="row mb-3 mt-5 d-flex">
-                      <label for="" class="col-md-4 col-lg-3 col-form-label ">TOTAL</label>
-                      <div class="col-md-8 col-lg-9">
-                        <p class="fs-2 text-warning">$150.020</p>                     
+                  
+                    <div class="row mb-3">
+                      <label for="senia" class="col-lg-4 col-form-label">Seña</label>
+                      <div class="col-lg-8">
+                        <input name="senia" type="text" class="form-control" id="senia" value="000">
                       </div>
                     </div>
+                  
+                    <div class="row mb-3">
+                      <label for="saldo" class="col-lg-4 col-form-label">Saldo</label>
+                      <div class="col-lg-8">
+                        <input name="saldo" type="text" class="form-control" id="saldo" value="000">
+                      </div>
+                    </div>
+                  
+                    <!-- Fechas clave -->
+                    <div class="row mb-3">
+                      <label for="fechaSenia" class="col-lg-4 col-form-label">Fecha de la seña</label>
+                      <div class="col-lg-8">
+                        <input name="fechaSenia" type="date" class="form-control" id="fechaSenia" value="2025-01-27">
+                      </div>
+                    </div>
+                  
+                    <div class="row mb-3">
+                      <label for="fechaSaldo" class="col-lg-4 col-form-label">Fecha de pago del saldo</label>
+                      <div class="col-lg-8">
+                        <input name="fechaSaldo" type="date" class="form-control" id="fechaSaldo">
+                      </div>
+                    </div>
+                  
+                    <div class="row mb-3">
+                      <label for="fechaMensajeTerminado" class="col-lg-4 col-form-label">Fecha mensaje terminado</label>
+                      <div class="col-lg-8">
+                        <input name="fechaMensajeTerminado" type="date" class="form-control" id="fechaMensajeTerminado" value="2025-01-27">
+                      </div>
+                    </div>
+                  
+                    <div class="row mb-3">
+                      <label for="fechaEntrega" class="col-lg-4 col-form-label">Fecha de entrega</label>
+                      <div class="col-lg-8">
+                        <input name="fechaEntrega" type="date" class="form-control" id="fechaEntrega" value="2025-01-27">
+                      </div>
+                    </div>
+                  
+                    <div class="row mb-3">
+                      <label for="fechaService" class="col-lg-4 col-form-label">Fecha de service</label>
+                      <div class="col-lg-8">
+                        <input name="fechaService" type="date" class="form-control" id="fechaService" value="2025-01-27">
+                      </div>
+                    </div>
+                  
+                    <div class="row mb-3">
+                      <label for="fechaReService" class="col-lg-4 col-form-label">Fecha de reservice</label>
+                      <div class="col-lg-8">
+                        <input name="fechaReService" type="date" class="form-control" id="fechaReService" value="2025-01-27">
+                      </div>
+                    </div>
+                  
+                    <button class="btn btn-success mt-3 w-100">Guardar cambios</button>
 
-                    <button class="btn btn-success w-100 mt-3">Guardar cambios</button>
-
-                  </form><!-- End add service Form -->
+                  </form>
+                  
+                  <!-- end alta -->
 
                 </div>
-
-              
+              </div><!-- End Bordered Tabs -->
 
             </div>
           </div>
@@ -544,90 +610,30 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let btnAgregar = document.getElementById("agregarComponente");
-      let contenedor = document.getElementById("componentes-container");
-  
-      if (!btnAgregar || !contenedor) {
-        console.error("El botón o el contenedor de componentes no existen en el DOM.");
-        return;
-      }
-  
-      btnAgregar.addEventListener("click", function () {
-        // Crear el contenedor del componente
-        let nuevoComponente = document.createElement("div");
-        nuevoComponente.classList.add("componente", "mt-2", "row");
-  
-        // Crear el label del componente
-        let nuevoLabel = document.createElement("label");
-        nuevoLabel.textContent = "Componente:";
-        nuevoLabel.classList.add("col-md-4", "col-form-label");
-  
-        // Crear el select de componentes
-        let nuevoSelect = document.createElement("select");
-        nuevoSelect.classList.add("form-select", "col-md-8", "col-lg-9");
-        nuevoSelect.innerHTML = `
-          <option value="">Seleccionar</option>
-                                    <option value="adaptador">Adaptador de cambio trasero para grandes piñones</option>
-                          <option value="asiento_mtb_antipro">ASIENTO MTB ANTIPRO. ANCHO CON GEL FIRE BIRD</option>
-                          <option value="asiento_playero">Asiento Playero marron</option>
-                          <option value="asiento_ddk_d376">ASIENTO DDK MOD. D376 SCALA</option>
-                          <option value="asiento_mtb_eco">ASIENTO MTB ECO NEGRO-GRIS - DDK</option>
-                          <option value="asiento_ddk_d2375">ASIENTO DDK MOD.D 2375 RHEA</option>
-                          <option value="asiento_mtb_antipro_negro_blanco">ASIENTO MTB ANTIPROSTATICO NEGRO-BLANCO - DDK</option>
-                          <option value="asiento_mtb_antipro_negro_azul">ASIENTO MTB ANTIPROSTATICO NEGRO-AZUL - DDK</option>
-                          <option value="asiento_ddk_d3211fs">ASIENTO DDK MOD. D3211FS ET</option>
-                          <option value="cable_freno_1800">CABLE FRENO TRASERO 1800mm</option>
-                          <option value="cable_freno_2200">CABLE FRENO TRASERO 2200mm</option>
-                          <option value="cadena_p410">CADENA 1/2x1/8 - P-410 CROMADA - TAIWAN</option>
-                          <option value="cadena_x410">CADENA 1/2x1/8x108 - X-410 - RLH</option>
-                          <option value="cadena_100_eslabones">Cadena 1/2x1/8 x100L - 100 eslabones</option>
-                          <option value="cadena_p7001">CADENA P7001 - 7/8V - 116 ESLABONES - RLH</option>
-                          <option value="cadena_shimano">Cadena Shimano CUES CN-LG500 9/10/11V</option>
-                          <option value="cartridge_347_110">CARTRIDGE 34.7mm DER-IZQ 110mm</option>
-                          <option value="cartucho_35_68_118">CARTUCHO 35 *68*118MM DER/DER BLINDADO RULEMAN TOPMEGA</option>
-                          <option value="caja_pedalera_neco">Caja pedalera NECO semisellada 34.7 - 113mm</option>
-                          <option value="cartridge_347_123">CARTRIDGE 34.7mm DER/IZQ - 123mm - CHINA</option>
-                          <option value="caja_pedalera_kenli">Caja pedalera KENLI semisellada 34.7 - 110mm</option>
-                          <option value="camara_700_32">CAMARA 700 x 32-35 VALVULA AMERICANA LARGA - KYOWA</option>
-                          <option value="camara_700_20">CAMARA 700 x 20 VALVULA FRANCESA 48mm - KYOWA</option>
-                          <option value="camara_700_20_60">CAMARA 700 x 20 VALVULA FRANCESA 60mm - KYOWA</option>
-                          <option value="camara_26_175">CAMARA 26 x 1.75 - 2.125 VALVULA AMERICANA LARGA 48MM - KYOWA</option>
-                          <option value="camara_26_150">CAMARA 26 x 1.50 VALVULA AMERICANA - KYOWA</option>
-        `;
-  
-        // Crear el input para el precio del componente
-        let nuevoInput = document.createElement("input");
-        nuevoInput.type = "text";
-        nuevoInput.classList.add("form-control", "mt-2", "col-md-8", "col-lg-9");
-        nuevoInput.placeholder = "Precio del componente";
-        nuevoInput.disabled = "true";
-  
-        // Crear el botón de eliminar
-        let btnEliminar = document.createElement("button");
-        btnEliminar.type = "button";
-        btnEliminar.classList.add("btn", "btn-danger", "mt-2", "col-md-8", "col-lg-9");
-        btnEliminar.textContent = "Eliminar Producto";
-        btnEliminar.addEventListener("click", function () {
-          nuevoComponente.remove(); // Eliminar el componente del DOM
-        });
-  
-        // Agregar los elementos al contenedor del componente
-        nuevoComponente.appendChild(nuevoLabel);
-        nuevoComponente.appendChild(nuevoSelect);
-        nuevoComponente.appendChild(nuevoInput);
-        nuevoComponente.appendChild(btnEliminar);
-  
-        // Agregar el nuevo componente al contenedor principal
-        contenedor.appendChild(nuevoComponente);
-      });
-    });
-  </script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    window.onload = function() {
+      var selects = document.querySelectorAll('select');
+      selects.forEach(function(select) {
+        select.value = ""; // Establece el valor a vacío para todos los select
+      });
+    };
+
+    function checkCustomColor() {
+      var select = document.getElementById("colorSelect");
+      var customInput = document.getElementById("customColor");
+      if (select.value === "Otro") {
+        customInput.style.display = "block";
+        customInput.focus();
+      } else {
+        customInput.style.display = "none";
+        customInput.value = "";
+      }
+    }
+    
+  </script>
 </body>
 
 </html>
